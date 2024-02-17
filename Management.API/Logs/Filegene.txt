@@ -1,0 +1,119 @@
+Time: 12/02/2024 01:06:17 AM
+-----------------------------------------------------------
+Message: Attempted to divide by zero.
+StackTrace:    at Management.API.Controllers.Masters.AuthenticationController.Post(AuthenticationRequestModel authenticationRequestModel) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Masters\AuthenticationController.cs:line 37
+Source: Management.API
+TargetSite: Void MoveNext()
+-----------------------------------------------------------
+
+Time: 14/02/2024 12:57:58 AM
+-----------------------------------------------------------
+Message: Invalid file signature.
+StackTrace:    at ExcelDataReader.ExcelReaderFactory.CreateReader(Stream fileStream, ExcelReaderConfiguration configuration)
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 173
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 50
+Source: ExcelDataReader
+TargetSite: ExcelDataReader.IExcelDataReader CreateReader(System.IO.Stream, ExcelDataReader.ExcelReaderConfiguration)
+-----------------------------------------------------------
+
+Time: 14/02/2024 12:58:48 AM
+-----------------------------------------------------------
+Message: Invalid file signature.
+StackTrace:    at ExcelDataReader.ExcelReaderFactory.CreateReader(Stream fileStream, ExcelReaderConfiguration configuration)
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 173
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 50
+Source: ExcelDataReader
+TargetSite: ExcelDataReader.IExcelDataReader CreateReader(System.IO.Stream, ExcelDataReader.ExcelReaderConfiguration)
+-----------------------------------------------------------
+
+Time: 15/02/2024 12:37:02 AM
+-----------------------------------------------------------
+Message: Could not find file 'E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Dump_Upload_format.csv'.
+StackTrace:    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.OpenText(String path)
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 174
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 50
+Source: System.Private.CoreLib
+TargetSite: Microsoft.Win32.SafeHandles.SafeFileHandle CreateFile(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare, System.IO.FileOptions)
+-----------------------------------------------------------
+
+Time: 15/02/2024 01:23:55 AM
+-----------------------------------------------------------
+Message: Cannot find column 9.
+StackTrace:    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.get_Item(Int32 columnIndex)
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 179
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 50
+Source: System.Data.Common
+TargetSite: System.Data.DataColumn get_Item(Int32)
+-----------------------------------------------------------
+
+Time: 15/02/2024 01:25:46 AM
+-----------------------------------------------------------
+Message: Cannot find column 9.
+StackTrace:    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.get_Item(Int32 columnIndex)
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 179
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 50
+Source: System.Data.Common
+TargetSite: System.Data.DataColumn get_Item(Int32)
+-----------------------------------------------------------
+
+Time: 15/02/2024 01:30:20 AM
+-----------------------------------------------------------
+Message: Cannot find column 9.
+StackTrace:    at System.Data.DataColumnCollection.get_Item(Int32 index)
+   at System.Data.DataRow.get_Item(Int32 columnIndex)
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 179
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 50
+Source: System.Data.Common
+TargetSite: System.Data.DataColumn get_Item(Int32)
+-----------------------------------------------------------
+
+Time: 15/02/2024 02:11:31 PM
+-----------------------------------------------------------
+Message: 'object' does not contain a definition for 'Add'
+StackTrace:    at CallSite.Target(Closure , CallSite , Object , String , String )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 178
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 50
+Source: Anonymously Hosted DynamicMethods Assembly
+TargetSite: Void CallSite.Target(System.Runtime.CompilerServices.Closure, System.Runtime.CompilerServices.CallSite, System.Object, System.String, System.String)
+-----------------------------------------------------------
+
+Time: 16/02/2024 12:31:59 AM
+-----------------------------------------------------------
+Message: Column 'Branch_Code' does not belong to table .
+StackTrace:    at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at System.Data.DataRowExtensions.Field[T](DataRow row, String columnName)
+   at Management.Services.Masters.DumpUploadDomain.<>c.<Add>b__14_0(DataRow row)
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer)
+   at System.Linq.GroupedEnumerable`2.GetEnumerator()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.ToList()
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile)
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 56
+Source: System.Data.Common
+TargetSite: System.Data.DataColumn GetDataColumn(System.String)
+-----------------------------------------------------------
+
+Time: 17/02/2024 12:11:30 AM
+-----------------------------------------------------------
+Message: Column 'BranchCode' does not belong to table .
+StackTrace:    at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at Management.Services.Masters.DumpUploadDomain.<>c.<Add>b__14_0(DataRow dr) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 175
+   at System.Linq.Lookup`2.Create(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer)
+   at System.Linq.GroupedEnumerable`2.GetEnumerator()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Management.Services.Masters.DumpUploadDomain.Add(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Services\Masters\DumpUploadDomain.cs:line 178
+   at Management.API.Controllers.Transactions.DumpUpladoController.AddDumpUpload(IFormFile formFile) in E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\Controllers\Transactions\DumpUpladoController.cs:line 56
+Source: System.Data.Common
+TargetSite: System.Data.DataColumn GetDataColumn(System.String)
+-----------------------------------------------------------
+

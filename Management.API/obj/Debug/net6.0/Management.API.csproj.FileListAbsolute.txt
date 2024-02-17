@@ -1,0 +1,617 @@
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.AssemblyReference.cache
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfoInputs.cache
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfo.cs
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CoreCompileInputs.cache
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\appsettings.Development.json
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\appsettings.json
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.API.exe
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.API.deps.json
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.API.runtimeconfig.json
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.API.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.API.pdb
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.Core.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.Model.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.Services.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.Model.pdb
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.Services.pdb
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Management.Core.pdb
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.Management.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Management.API.props
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Management.API.props
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Management.API.props
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\scopedcss\bundle\Management.API.styles.css
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CopyComplete
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.dll
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\refint\Management.API.dll
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.pdb
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\Management.API.genruntimeconfig.cache
+D:\Sample\.NetCore6\Management\Management.API\obj\Debug\net6.0\ref\Management.API.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Sample\.NetCore6\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\appsettings.json
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\appsettings.Development.json
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.API.exe
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.API.deps.json
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.API.runtimeconfig.json
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.API.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.API.pdb
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\AutoMapper.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.pdb
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.pdb
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.pdb
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.AssemblyReference.cache
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfoInputs.cache
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfo.cs
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CoreCompileInputs.cache
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cache
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.Management.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Management.API.props
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Management.API.props
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Management.API.props
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\scopedcss\bundle\Management.API.styles.css
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CopyComplete
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\refint\Management.API.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.pdb
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\Management.API.genruntimeconfig.cache
+D:\APPLICATION\API\RM\Management\Management\Management.API\obj\Debug\net6.0\ref\Management.API.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Humanizer.dll
+D:\APPLICATION\API\RM\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.AssemblyReference.cache
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfoInputs.cache
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfo.cs
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CoreCompileInputs.cache
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cs
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cache
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\appsettings.Development.json
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\appsettings.json
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.API.exe
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.API.deps.json
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.API.runtimeconfig.json
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.API.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.API.pdb
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\AutoMapper.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Humanizer.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.dll
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.pdb
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.pdb
+D:\DailyWork_Culture\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.pdb
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\scopedcss\bundle\Management.API.styles.css
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CopyComplete
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.dll
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\refint\Management.API.dll
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.pdb
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\Management.API.genruntimeconfig.cache
+D:\DailyWork_Culture\Management\Management\Management.API\obj\Debug\net6.0\ref\Management.API.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\appsettings.json
+D:\Management\Management\Management.API\bin\Debug\net6.0\appsettings.Development.json
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.API.exe
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.API.deps.json
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.API.runtimeconfig.json
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.API.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.API.pdb
+D:\Management\Management\Management.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Humanizer.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.dll
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.pdb
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.pdb
+D:\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.pdb
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.AssemblyReference.cache
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfoInputs.cache
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfo.cs
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CoreCompileInputs.cache
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.Management.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Management.API.props
+D:\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Management.API.props
+D:\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Management.API.props
+D:\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Management\Management\Management.API\obj\Debug\net6.0\scopedcss\bundle\Management.API.styles.css
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CopyComplete
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.dll
+D:\Management\Management\Management.API\obj\Debug\net6.0\refint\Management.API.dll
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.pdb
+D:\Management\Management\Management.API\obj\Debug\net6.0\Management.API.genruntimeconfig.cache
+D:\Management\Management\Management.API\obj\Debug\net6.0\ref\Management.API.dll
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.AssemblyReference.cache
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfoInputs.cache
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfo.cs
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CoreCompileInputs.cache
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cs
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cache
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\appsettings.Development.json
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\appsettings.json
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.API.exe
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.API.deps.json
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.API.runtimeconfig.json
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.API.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.API.pdb
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\AutoMapper.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Humanizer.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.Core.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.Model.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.Services.dll
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.Model.pdb
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.Services.pdb
+D:\RMS26\Management\Management.API\bin\Debug\net6.0\Management.Core.pdb
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.Management.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Management.API.props
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Management.API.props
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Management.API.props
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\scopedcss\bundle\Management.API.styles.css
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CopyComplete
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.dll
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\refint\Management.API.dll
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.pdb
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\Management.API.genruntimeconfig.cache
+D:\RMS26\Management\Management.API\obj\Debug\net6.0\ref\Management.API.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\appsettings.Development.json
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\appsettings.json
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.exe
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.deps.json
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.runtimeconfig.json
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.pdb
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\AutoMapper.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Humanizer.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.pdb
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.pdb
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.pdb
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.AssemblyReference.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfoInputs.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfo.cs
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CoreCompileInputs.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cs
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.build.json
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.development.json
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\scopedcss\bundle\Management.API.styles.css
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CopyComplete
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\refint\Management.API.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.pdb
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.genruntimeconfig.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.API\obj\Debug\net6.0\ref\Management.API.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\appsettings.json
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\appsettings.Development.json
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.API.exe
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.API.deps.json
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.API.runtimeconfig.json
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.API.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.API.pdb
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\AutoMapper.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Humanizer.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.Core.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.Model.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.Services.dll
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.Model.pdb
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.Services.pdb
+D:\RMS Management\28_01_2024\Management\Management.API\bin\Debug\net6.0\Management.Core.pdb
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.AssemblyReference.cache
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfoInputs.cache
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfo.cs
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CoreCompileInputs.cache
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cs
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cache
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.Management.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Management.API.props
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Management.API.props
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Management.API.props
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\scopedcss\bundle\Management.API.styles.css
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CopyComplete
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.dll
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\refint\Management.API.dll
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.pdb
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\Management.API.genruntimeconfig.cache
+D:\RMS Management\28_01_2024\Management\Management.API\obj\Debug\net6.0\ref\Management.API.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\appsettings.Development.json
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\appsettings.json
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.exe
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.deps.json
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.runtimeconfig.json
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.API.pdb
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\AutoMapper.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\EPPlus.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\ExcelDataReader.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Humanizer.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Model.pdb
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Services.pdb
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\bin\Debug\net6.0\Management.Core.pdb
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.AssemblyReference.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfoInputs.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.AssemblyInfo.cs
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CoreCompileInputs.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cs
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.MvcApplicationPartsAssemblyInfo.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.build.json
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\staticwebassets.development.json
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\scopedcss\bundle\Management.API.styles.css
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.csproj.CopyComplete
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\refint\Management.API.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.pdb
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\Management.API.genruntimeconfig.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.API\obj\Debug\net6.0\ref\Management.API.dll

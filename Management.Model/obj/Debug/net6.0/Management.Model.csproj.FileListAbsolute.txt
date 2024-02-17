@@ -1,0 +1,110 @@
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfoInputs.cache
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfo.cs
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.CoreCompileInputs.cache
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.AssemblyReference.cache
+D:\Sample\.NetCore6\Management\Management.Model\bin\Debug\net6.0\Management.Model.deps.json
+D:\Sample\.NetCore6\Management\Management.Model\bin\Debug\net6.0\Management.Model.dll
+D:\Sample\.NetCore6\Management\Management.Model\bin\Debug\net6.0\Management.Model.pdb
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\Management.Model.dll
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\refint\Management.Model.dll
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\Management.Model.pdb
+D:\Sample\.NetCore6\Management\Management.Model\obj\Debug\net6.0\ref\Management.Model.dll
+D:\APPLICATION\API\RM\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.deps.json
+D:\APPLICATION\API\RM\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.dll
+D:\APPLICATION\API\RM\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.pdb
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.AssemblyReference.cache
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfoInputs.cache
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfo.cs
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.CoreCompileInputs.cache
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.dll
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\refint\Management.Model.dll
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.pdb
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\ref\Management.Model.dll
+D:\APPLICATION\API\RM\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.runtimeconfig.json
+D:\APPLICATION\API\RM\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.genruntimeconfig.cache
+D:\DailyWork_Culture\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.deps.json
+D:\DailyWork_Culture\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.runtimeconfig.json
+D:\DailyWork_Culture\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.dll
+D:\DailyWork_Culture\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.pdb
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.AssemblyReference.cache
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfoInputs.cache
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfo.cs
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.CoreCompileInputs.cache
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.dll
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\refint\Management.Model.dll
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.pdb
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.genruntimeconfig.cache
+D:\DailyWork_Culture\Management\Management\Management.Model\obj\Debug\net6.0\ref\Management.Model.dll
+D:\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.deps.json
+D:\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.runtimeconfig.json
+D:\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.dll
+D:\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.pdb
+D:\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.AssemblyReference.cache
+D:\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfoInputs.cache
+D:\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfo.cs
+D:\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.CoreCompileInputs.cache
+D:\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.dll
+D:\Management\Management\Management.Model\obj\Debug\net6.0\refint\Management.Model.dll
+D:\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.pdb
+D:\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.genruntimeconfig.cache
+D:\Management\Management\Management.Model\obj\Debug\net6.0\ref\Management.Model.dll
+D:\RMS26\Management\Management.Model\bin\Debug\net6.0\Management.Model.deps.json
+D:\RMS26\Management\Management.Model\bin\Debug\net6.0\Management.Model.runtimeconfig.json
+D:\RMS26\Management\Management.Model\bin\Debug\net6.0\Management.Model.dll
+D:\RMS26\Management\Management.Model\bin\Debug\net6.0\Management.Model.pdb
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.AssemblyReference.cache
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfoInputs.cache
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfo.cs
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.CoreCompileInputs.cache
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\Management.Model.dll
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\refint\Management.Model.dll
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\Management.Model.pdb
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\Management.Model.genruntimeconfig.cache
+D:\RMS26\Management\Management.Model\obj\Debug\net6.0\ref\Management.Model.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.deps.json
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.runtimeconfig.json
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.pdb
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.AssemblyReference.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfoInputs.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfo.cs
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.CoreCompileInputs.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\refint\Management.Model.dll
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.pdb
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.genruntimeconfig.cache
+E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\ref\Management.Model.dll
+D:\RMS Management\28_01_2024\Management\Management.Model\bin\Debug\net6.0\Management.Model.deps.json
+D:\RMS Management\28_01_2024\Management\Management.Model\bin\Debug\net6.0\Management.Model.runtimeconfig.json
+D:\RMS Management\28_01_2024\Management\Management.Model\bin\Debug\net6.0\Management.Model.dll
+D:\RMS Management\28_01_2024\Management\Management.Model\bin\Debug\net6.0\Management.Model.pdb
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.AssemblyReference.cache
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfoInputs.cache
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfo.cs
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.CoreCompileInputs.cache
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\Management.Model.dll
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\refint\Management.Model.dll
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\Management.Model.pdb
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\Management.Model.genruntimeconfig.cache
+D:\RMS Management\28_01_2024\Management\Management.Model\obj\Debug\net6.0\ref\Management.Model.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.deps.json
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.runtimeconfig.json
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\bin\Debug\net6.0\Management.Model.pdb
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.AssemblyReference.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfoInputs.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.AssemblyInfo.cs
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.csproj.CoreCompileInputs.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\refint\Management.Model.dll
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.pdb
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\Management.Model.genruntimeconfig.cache
+E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Model\obj\Debug\net6.0\ref\Management.Model.dll
