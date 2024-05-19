@@ -20,7 +20,7 @@ namespace Management.Services.Masters
             validationMessage = new HashSet<string>();
         }
 
-        public async Task<IEnumerable<GetAllPickListResponseModel>> GetAll()
+        public async Task<List<GetAllPickListResponseModel>> GetAll()
         {
             var query = _unitOfWork.PickListMasterRepository
                           .AsQueryable()
@@ -70,7 +70,7 @@ namespace Management.Services.Masters
             }
             else
             {
-                bool checkTemplate = await _unitOfWork.TemplateMasterRepository.Any(x => x.Id == request.TemplateId);
+                bool checkTemplate = await _unitOfWork.TemplateDetailRepository.Any(x => x.Id == request.TemplateId);
                 if (checkTemplate)
                     validationMessage.Add("0");
                 else
@@ -115,7 +115,7 @@ namespace Management.Services.Masters
             }
             if (Chk == "Template")
             {
-                bool checkTemplate = await _unitOfWork.TemplateMasterRepository.Any(x => x.Id == request.TemplateId);
+                bool checkTemplate = await _unitOfWork.TemplateDetailRepository.Any(x => x.Id == request.TemplateId);
                 if (checkTemplate)
                     validationMessage.Add("0");
                 else
@@ -165,7 +165,7 @@ namespace Management.Services.Masters
     }
     public interface IPickListDomain
     {
-        Task<IEnumerable<GetAllPickListResponseModel>> GetAll();
+        Task<List<GetAllPickListResponseModel>> GetAll();
         Task<GetAllPickListResponseModel> GetPickListById(GetPickListByIdRequestModel request);
         Task<HashSet<string>> AddValidation(AddPickListRequestModel request, string Chk);
         Task<HashSet<string>> UpdateValidation(UpdatePickListRequest request, string Chk);

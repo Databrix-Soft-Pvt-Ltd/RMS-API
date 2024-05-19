@@ -31,7 +31,7 @@ namespace Management.Services.Masters
             var user = await _unitOfWork.UserRepository.FirstOrDefault(x => x.IsActive == true && x.EmailId == authenticationRequestModel.EmailId && x.Password == Encryption.Encrypt(authenticationRequestModel.Password));
 
             bool isPasswordExpired = Encryption.IsPasswordExpired(user.EmailId);
-
+            string UserPansss = Encryption.Decrypt(user.Password);
             if (isPasswordExpired)
             {
                 authenticationResponseModel.StatusCode = 200;
@@ -58,6 +58,9 @@ namespace Management.Services.Masters
         }
         public async Task<HashSet<string>> LoginValidation(AuthenticationRequestModel authenticationRequestModel)
         {
+           //string UserPansss = Encryption.Decrypt("g8YUaA5BjTTlbClX46TXXGmlATWWDiKJJgF8r2fnfBs=");
+
+
             var userExists = await _unitOfWork.UserRepository.Any(x => x.IsActive == true && x.EmailId.ToLower() == authenticationRequestModel.EmailId.ToLower() && x.Password.ToLower() == Encryption.Encrypt(authenticationRequestModel.Password));
             if (!userExists)
             {
@@ -85,7 +88,7 @@ namespace Management.Services.Masters
             var token = new JwtSecurityToken(_config["Jwt:Issuer"],
               _config["Jwt:Issuer"],
               claims.ToArray(),
-              expires: DateTime.Now.AddSeconds(30),
+              expires: DateTime.Now.AddHours(30),
               signingCredentials: credentials
               );
 

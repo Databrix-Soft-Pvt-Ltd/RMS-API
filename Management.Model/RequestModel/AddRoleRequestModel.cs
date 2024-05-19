@@ -12,5 +12,7 @@ namespace Management.Model.RequestModel
         public string RoleName { get; set; } = null!;
         public string Description { get; set; } = null!;
 
+        public bool? IsActive { get; set; }
+
     }
 }

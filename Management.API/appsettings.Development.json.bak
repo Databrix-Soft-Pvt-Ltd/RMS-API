@@ -1,0 +1,25 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "FluentApiSettings": {
+    "LogFilePath": "Error_Log.txt"
+  },
+  "ConnectionStrings": {
+    "DBConnection": "Server=DESKTOP-C2H4MN0;Initial Catalog=RMS_20241;Persist Security Info=True;User ID=sa;Password=Admin@1234"
+    // "DBConnection": "Server=WIN-KGHCSRUAE19\\SQLEXPRESS2022;Initial Catalog=RMS_New_Version;Persist Security Info=True;User ID=sa;Password=balaji@123"
+  },
+  "Security": {
+    "AllowedHosts": [],
+    "AllowedIps": [],
+    "Secret": "6XJCIEJO41PQZNWJC4RR"
+  },
+  "Jwt": {
+    "Key": "this is my custom Secret key for authentication",
+    "Issuer": "Test.com"
+  }
+}

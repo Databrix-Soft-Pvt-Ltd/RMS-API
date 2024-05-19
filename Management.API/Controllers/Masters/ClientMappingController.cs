@@ -1,12 +1,15 @@
 ﻿using Management.API.Miscellaneous;
+using Management.Model.RequestModel;
 using Management.Model.ResponseModel;
 using Management.Services.Masters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class ClientMappingController : ControllerBase
     {
@@ -25,17 +28,19 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                GlobalResponse.ReponseData = await _clientMappingDomain.GetAllClientMap();
 
-                if (GlobalResponse.ReponseData != "0")
+                var IResult = await _clientMappingDomain.GetAllClientMap();
+
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
                     GlobalResponse.Response_Message = "Record fetched Successfully....";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -65,7 +70,7 @@ namespace Management.API.Controllers.Masters
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -84,43 +89,47 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                var validations1 = await _clientMappingDomain.AddClientMapValidation(request, "ClientMap");
+                await _clientMappingDomain.Add(request);
+                GlobalResponse.Response_Message = "Record Added successfully";
+                GlobalResponse.Response_Code = 200;
+                return Ok(GlobalResponse);
+                //var validations1 = await _clientMappingDomain.AddClientMapValidation(request, "ClientMap");
 
-                if (validations1.FirstOrDefault() == "0")
-                {
-                    var validations2 = await _clientMappingDomain.AddClientMapValidation(request, "Client");
+                //if (validations1.FirstOrDefault() == "0")
+                //{
+                //    var validations2 = await _clientMappingDomain.AddClientMapValidation(request, "Client");
 
-                    if (validations2.FirstOrDefault() == "0")
-                    {
-                        var validations3 = await _clientMappingDomain.AddClientMapValidation(request, "User");
+                //    if (validations2.FirstOrDefault() == "0")
+                //    {
+                //        var validations3 = await _clientMappingDomain.AddClientMapValidation(request, "User");
 
-                        if (validations3.FirstOrDefault() == "0")
-                        {
-                            await _clientMappingDomain.Add(request);
-                            GlobalResponse.Response_Message = "Record Added successfully";
-                            GlobalResponse.Response_Code = 200;
-                            return Ok(GlobalResponse);
-                        }
-                        else
-                        {
-                            GlobalResponse.Response_Code = 404;
-                            GlobalResponse.Response_Message = "User not found";
-                            return Ok(GlobalResponse);
-                        }
-                    }
-                    else
-                    {
-                        GlobalResponse.Response_Code = 404;
-                        GlobalResponse.Response_Message = "Client not found";
-                        return Ok(GlobalResponse);
-                    }
-                }
-                else
-                {
-                    GlobalResponse.Response_Code = 404;
-                    GlobalResponse.Response_Message = "ClientMap alredy found";
-                    return Ok(GlobalResponse);
-                }
+                //        if (validations3.FirstOrDefault() == "0")
+                //        {
+                //            await _clientMappingDomain.Add(request);
+                //            GlobalResponse.Response_Message = "Record Added successfully";
+                //            GlobalResponse.Response_Code = 200;
+                //            return Ok(GlobalResponse);
+                //        }
+                //        else
+                //        {
+                //            GlobalResponse.Response_Code = 204;
+                //            GlobalResponse.Response_Message = "User not found";
+                //            return Ok(GlobalResponse);
+                //        }
+                //    }
+                //    else
+                //    {
+                //        GlobalResponse.Response_Code = 204;
+                //        GlobalResponse.Response_Message = "Client not found";
+                //        return Ok(GlobalResponse);
+                //    }
+                //}
+                //else
+                //{
+                //    GlobalResponse.Response_Code = 204;
+                //    GlobalResponse.Response_Message = "ClientMap alredy found";
+                //    return Ok(GlobalResponse);
+                //}
 
             }
             catch (Exception ex)
@@ -139,42 +148,45 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                var validations1 = await _clientMappingDomain.UpdatClientMapValidation(request, "ClientMap");
+                await _clientMappingDomain.Update(request);
+                GlobalResponse.Response_Message = "Record Updated successfully";
+                return Ok(GlobalResponse);
+                //var validations1 = await _clientMappingDomain.UpdatClientMapValidation(request, "ClientMap");
 
-                if (validations1.FirstOrDefault() == "0")
-                {
-                    var validations2 = await _clientMappingDomain.UpdatClientMapValidation(request, "Client");
+                //if (validations1.FirstOrDefault() == "0")
+                //{
+                //    var validations2 = await _clientMappingDomain.UpdatClientMapValidation(request, "Client");
 
-                    if (validations2.FirstOrDefault() == "0")
-                    {
-                        var validations3 = await _clientMappingDomain.UpdatClientMapValidation(request, "User");
+                //    if (validations2.FirstOrDefault() == "0")
+                //    {
+                //        var validations3 = await _clientMappingDomain.UpdatClientMapValidation(request, "User");
 
-                        if (validations3.FirstOrDefault() == "0")
-                        {
-                            await _clientMappingDomain.Update(request);
-                            GlobalResponse.Response_Message = "Record Updated successfully";
-                            return Ok(GlobalResponse);
-                        }
-                        else
-                        {
-                            GlobalResponse.Response_Code = 404;
-                            GlobalResponse.Response_Message = "User not found";
-                            return Ok(GlobalResponse);
-                        }
-                    }
-                    else
-                    {
-                        GlobalResponse.Response_Code = 404;
-                        GlobalResponse.Response_Message = "Client not found";
-                        return Ok(GlobalResponse);
-                    }
-                }
-                else if (validations1.Count == 1)
-                {
-                    GlobalResponse.Response_Code = 404;
-                    GlobalResponse.Response_Message = "ClientMap Already Exists";
-                    return Ok(GlobalResponse);
-                }
+                //        if (validations3.FirstOrDefault() == "0")
+                //        {
+                //            await _clientMappingDomain.Update(request);
+                //            GlobalResponse.Response_Message = "Record Updated successfully";
+                //            return Ok(GlobalResponse);
+                //        }
+                //        else
+                //        {
+                //            GlobalResponse.Response_Code = 204;
+                //            GlobalResponse.Response_Message = "User not found";
+                //            return Ok(GlobalResponse);
+                //        }
+                //    }
+                //    else
+                //    {
+                //        GlobalResponse.Response_Code = 204;
+                //        GlobalResponse.Response_Message = "Client not found";
+                //        return Ok(GlobalResponse);
+                //    }
+                //}
+                //else if (validations1.Count == 1)
+                //{
+                //    GlobalResponse.Response_Code = 204;
+                //    GlobalResponse.Response_Message = "ClientMap Already Exists";
+                //    return Ok(GlobalResponse);
+                //}
             }
             catch (Exception ex)
             {
@@ -185,7 +197,8 @@ namespace Management.API.Controllers.Masters
             }
             return Ok(GlobalResponse);
         }
-        [HttpDelete]
+
+        [HttpPost]
         [Route("DeleteClientMap")]
         public async Task<IActionResult> Delete(GetClientMapByIdRequestModel id)
         {
@@ -213,6 +226,25 @@ namespace Management.API.Controllers.Masters
                 return Ok(GlobalError);
             }
         }
-         
+
+        [HttpPost]
+        [Route("ClientIsActive")]
+        public async Task<IActionResult> ClientIsActive(Client_IsAction branchMapList)
+        {
+            try
+            {
+                await _clientMappingDomain.UpdateUserIsActive(branchMapList);
+                GlobalResponse.Response_Message = "Record IsActivated successfully";
+                return Ok(GlobalResponse);  
+            }
+            catch (Exception ex)
+            {
+                GlobalError.ErrorCode = 505;
+                GlobalError.Error_Trace_Point = ex.StackTrace;
+                GlobalError.Error_Message = ex.Message;
+                return Ok(GlobalError);
+            }
+        }
+
     }
 }

@@ -10,5 +10,6 @@ namespace Management.Model.RMSEntity
         public long? UserId { get; set; }
         public long? CreatedBy { get; set; }
         public DateTime? CreatedDate { get; set; }
+        public bool? IsActive { get; set; }
     }
 }

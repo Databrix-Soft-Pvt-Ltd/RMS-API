@@ -2,12 +2,14 @@
 using Management.Model.RequestModel;
 using Management.Services.Masters;
 using Management.Services.Masters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class TemplateController : ControllerBase
     {
@@ -29,17 +31,20 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                GlobalResponse.ReponseData = await _templateMasterDomain.GetAll();
+                //GlobalResponse.ReponseData = await _templateMasterDomain.GetAll();
 
-                if (GlobalResponse.ReponseData != null)
+                var IResult = await _templateMasterDomain.GetAll();
+
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
-                    GlobalResponse.Response_Message = "Record fetched Successfully....";
+                    GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -71,7 +76,7 @@ namespace Management.API.Controllers.Masters
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -89,7 +94,7 @@ namespace Management.API.Controllers.Masters
 
         [HttpPost]
         [Route("AddTemplate")]
-        public async Task<IActionResult> Post(AddTemplateRequestModel request)
+        public async Task<IActionResult> Post(GetTemplateName request)
         {
             try
             {
@@ -98,15 +103,14 @@ namespace Management.API.Controllers.Masters
                 if (validations.Count == 0)
                 {
                     await _templateMasterDomain.Add(request);
-
-                    GlobalResponse.Response_Message = "Template Added successfully";
                     GlobalResponse.Response_Code = 200;
+                    GlobalResponse.Response_Message = "Template Added successfully"; 
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalError.ErrorCode = 409;
-                    GlobalError.Error_Message = "Template Already Exists";
+                    GlobalResponse.Response_Code = 409;
+                    GlobalResponse.Response_Message = "Template Already Exists";
                     return Conflict(GlobalError);
                 }
             }
@@ -129,16 +133,19 @@ namespace Management.API.Controllers.Masters
             try
             {
                 var validations = await _templateMasterDomain.UpdateValidation(request);
-                if (validations.Count() == 0)
+                if (validations.FirstOrDefault() == "0")
                 {
                     await _templateMasterDomain.Update(request);
-
-                    GlobalResponse.Response_Message = "Template Updated successfully";
+                    GlobalResponse.Response_Code = 200;
+                    GlobalResponse.Response_Message = "Record Updated Successfully";
                     return Ok(GlobalResponse);
                 }
-                GlobalError.ErrorCode = 404;
-                GlobalError.Error_Message = "Template Not Found";
-                return Ok(GlobalError);
+                else
+                {
+                    GlobalResponse.Response_Code = 204;
+                    GlobalResponse.Response_Message = "Template doesnot exits Exists";
+                    return Ok(GlobalResponse);
+                }
 
             }
             catch (Exception ex)
@@ -151,22 +158,28 @@ namespace Management.API.Controllers.Masters
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         [Route("DeleteTemplate")]
         public async Task<IActionResult> Delete(GEtTemplateByIdRequest id)
         {
             try
             {
 
-                var validations = await _templateMasterDomain.DeleteValidation(id);
-                if (validations.Count() == 0)
+                //var validations = await _templateMasterDomain.DeleteValidation(id);
+                if (true)
                 {
-                    await _templateMasterDomain.Delete(id);
-                    return Ok(true);
+                   var GetResult =  await _templateMasterDomain.Delete(id);
+
+                    GlobalResponse.Response_Code = 200;
+                    GlobalResponse.Response_Message = GetResult.FirstOrDefault().ToString();
+                    return Ok(GlobalResponse); 
                 }
-                GlobalError.ErrorCode = 404;
-                GlobalError.Error_Message = "Template not found for deletion";
-                return Ok(GlobalError);
+                else
+                {
+                    GlobalResponse.Response_Code = 204;
+                    GlobalResponse.Response_Message = "Record not found for deletetion";
+                    return Ok(GlobalResponse);
+                } 
             }
             catch (Exception ex)
             {

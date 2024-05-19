@@ -10,5 +10,6 @@ namespace Management.Model.ResponseModel
     {
         public long Id { get; set; }
         public string? CourierName { get; set; }
+        public bool? IsActive { get; set; }
     }
 }

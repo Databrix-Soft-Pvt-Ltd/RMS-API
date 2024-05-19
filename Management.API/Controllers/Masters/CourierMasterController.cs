@@ -1,12 +1,13 @@
 ﻿using Management.API.Miscellaneous;
 using Management.Model.RequestModel;
 using Management.Services.Masters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     [ApiController]
     public class CourierMasterController : ControllerBase
     {
@@ -29,18 +30,22 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                GlobalResponse.ReponseData = await _courierMasterDomain.GetAll();
+                //GlobalResponse.ReponseData = await _courierMasterDomain.GetAll();
 
-                if (GlobalResponse.ReponseData != null)
+                var IResult = await _courierMasterDomain.GetAll();
+
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
-                    GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.Response_Message = "Record fetched Successfully....";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
             }
@@ -55,6 +60,41 @@ namespace Management.API.Controllers.Masters
             }
         }
 
+        [HttpGet]
+        [Route("GetAllCourierIsActive")]
+        public async Task<IActionResult> GetAllCourierIsActive()
+        {
+            try
+            {
+                //GlobalResponse.ReponseData = await _courierMasterDomain.GetAll();
+
+                var IResult = await _courierMasterDomain.GetAllIsActiveCourier();
+
+                if (IResult.Count != 0)
+                {
+                    GlobalResponse.Response_Code = 200;
+                    GlobalResponse.Response_Message = "Record fetched Successfully....";
+                    GlobalResponse.ReponseData = IResult;
+                    return Ok(GlobalResponse);
+                }
+                else
+                {
+                    GlobalResponse.Response_Code = 204;
+                    GlobalResponse.Response_Message = "Record not found";
+                    GlobalResponse.ReponseData = IResult;
+                    return Ok(GlobalResponse);
+                }
+            }
+            catch (Exception ex)
+            {
+                GlobalError.ErrorCode = 505;
+                GlobalError.Error_Message = ex.Message;
+                _exceptionHandling.LogError(ex);
+
+
+                return Ok(GlobalError);
+            }
+        }
 
 
         [HttpPost("GetCourierById")]
@@ -72,7 +112,7 @@ namespace Management.API.Controllers.Masters
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -124,7 +164,7 @@ namespace Management.API.Controllers.Masters
             try
             {
                 var validations = await _courierMasterDomain.UpdateValidation(request);
-                if (validations.Count() == 0)
+                if (validations.FirstOrDefault()== "0")
                 {
                     await _courierMasterDomain.Update(request);
 
@@ -149,8 +189,8 @@ namespace Management.API.Controllers.Masters
         }
 
 
-        [HttpDelete]
-        [Route("DeleteClient")]
+        [HttpPost]
+        [Route("DeleteCourier")]
         public async Task<IActionResult> Delete(GetCourierByIdRequestModel id)
         {
             try
@@ -164,7 +204,7 @@ namespace Management.API.Controllers.Masters
 
                     return Ok(GlobalResponse);
                 }
-                GlobalResponse.Response_Code = 404;
+                GlobalResponse.Response_Code = 204;
                 GlobalResponse.Response_Message = "Record does not found for deletion";
                 return Ok(GlobalResponse);
             }

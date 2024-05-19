@@ -39,5 +39,6 @@ namespace Management.Model.RMSEntity
         public string? Status { get; set; }
         public long? UploadBy { get; set; }
         public DateTime? UploadDate { get; set; }
+        public string? ItemStatus { get; set; }
     }
 }

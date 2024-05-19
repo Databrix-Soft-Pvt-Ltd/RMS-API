@@ -48,6 +48,10 @@ namespace TwoWayCommunication.Core.Repository
         {
             return await RepositoryContext.Set<T>().Where(expression).AnyAsync();
         }
+        public void Detach(T entity)
+        {
+            RepositoryContext.Entry(entity).State = EntityState.Detached;
+        }
     }
 
     public interface IRepositoryBase<T>
@@ -60,6 +64,7 @@ namespace TwoWayCommunication.Core.Repository
         void Delete(T obj);
         Task<T> FirstOrDefault(Expression<Func<T, bool>> expression);
         Task<bool> Any(Expression<Func<T, bool>> expression);
+        void Detach(T entity);
     }
 }
  

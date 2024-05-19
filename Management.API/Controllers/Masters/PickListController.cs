@@ -1,13 +1,14 @@
 ﻿using Management.API.Miscellaneous;
 using Management.Model.RequestModel;
 using Management.Services.Masters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
-    // [Authorize]
+    [Authorize]
     [ApiController]
     public class PickListController : ControllerBase
     {
@@ -31,17 +32,19 @@ namespace Management.API.Controllers.Masters
             try
             {
 
-                GlobalResponse.ReponseData = await _pickListDomain.GetAll();
+                //GlobalResponse.ReponseData = await _pickListDomain.GetAll();
+                var IResult = await _pickListDomain.GetAll();
 
-                if (GlobalResponse.ReponseData != null)
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
                     GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -77,7 +80,7 @@ namespace Management.API.Controllers.Masters
                     }
                     else
                     {
-                        GlobalResponse.Response_Code = 404;
+                        GlobalResponse.Response_Code = 204;
                         GlobalResponse.Response_Message = "Record not found";
                         return Ok(GlobalResponse);
                     }
@@ -85,7 +88,7 @@ namespace Management.API.Controllers.Masters
                 //}
                 //else
                 //{
-                //    GlobalResponse.Response_Code = 404;
+                //    GlobalResponse.Response_Code = 204;
                 //    GlobalResponse.Response_Message = "Token is not Valid....";
                 //    return Ok(GlobalResponse);
                 //}
@@ -121,14 +124,14 @@ namespace Management.API.Controllers.Masters
                     }
                     else
                     {
-                        GlobalResponse.Response_Code = 404;
+                        GlobalResponse.Response_Code = 204;
                         GlobalResponse.Response_Message = "TemplateId not found";
                         return Ok(GlobalResponse);
                     }
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = " Record already exists ";
                     return Ok(GlobalResponse);
                 }
@@ -168,21 +171,21 @@ namespace Management.API.Controllers.Masters
                         }
                         else
                         {
-                            GlobalResponse.Response_Code = 404;
+                            GlobalResponse.Response_Code = 204;
                             GlobalResponse.Response_Message = "Templete not found";
                             return Ok(GlobalResponse);
                         }
                     }
                     else
                     {
-                        GlobalResponse.Response_Code = 404;
+                        GlobalResponse.Response_Code = 204;
                         GlobalResponse.Response_Message = "Record already exists...";
                         return Ok(GlobalResponse);
                     }
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Pickup Record not found...";
                     return Ok(GlobalResponse);
                 }
@@ -196,7 +199,7 @@ namespace Management.API.Controllers.Masters
             }
 
         }
-        [HttpDelete]
+        [HttpPost]
         [Route("DeletePickList")]
         public async Task<IActionResult> Delete(GetPickListByIdRequestModel id)
         {
@@ -210,7 +213,7 @@ namespace Management.API.Controllers.Masters
                     GlobalResponse.Response_Message = "Record deleted successfully";
                     return Ok(GlobalResponse);
                 }
-                GlobalResponse.Response_Code = 404;
+                GlobalResponse.Response_Code = 204;
                 GlobalResponse.Response_Message = "Record not found for deletion";
                 return Ok(GlobalResponse);
             }

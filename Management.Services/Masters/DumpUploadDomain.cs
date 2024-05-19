@@ -10,8 +10,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 using TwoWayCommunication.Core.UnitOfWork;
+using TwoWayCommunication.Model.Enums;
 
 namespace Management.Services.Masters
 {
@@ -21,52 +23,33 @@ namespace Management.Services.Masters
 
         readonly IUnitOfWork _unitOfWork;
         private HashSet<string> validationMessage { get; set; }
+        private readonly GlobalUserID _gluID;
         public List<AddDumpUploadRequestModel> DumpLIstData { get; set; }
 
+        private List<TemplateDetail> ListTemp { get; set; }
 
-
-        public DumpUploadDomain(IUnitOfWork unitOfWork)
+        public DumpUploadDomain(IUnitOfWork unitOfWork, GlobalUserID globalUserID)
         {
             _unitOfWork = unitOfWork;
             validationMessage = new HashSet<string>();
-
+            _gluID = globalUserID;
         }
-        public async Task<IEnumerable<GetAllDumpUploadResponse>> GetAll()
+        public async Task<List<GetAllDumpUploadResponse>> GetAll()
         {
             var query = _unitOfWork.DumpUploadMasterRepository.AsQueryable().
                 Select(c => new GetAllDumpUploadResponse
                 {
-                    Ref1 = c.Ref1,
-                    Ref2 = c.Ref2,
-                    Ref3 = c.Ref3,
-                    Ref4 = c.Ref4,
-                    Ref5 = c.Ref5,
-                    Ref6 = c.Ref6,
-                    Ref7 = c.Ref7,
-                    Ref8 = c.Ref8,
-                    Ref9 = c.Ref9,
-                    Ref10 = c.Ref10,
-                    Ref11 = c.Ref11,
-                    Ref12 = c.Ref12,
-                    Ref13 = c.Ref13,
-                    Ref14 = c.Ref14,
-                    Ref15 = c.Ref15,
-                    Ref16 = c.Ref16,
-                    Ref17 = c.Ref17,
-                    Ref18 = c.Ref18,
-                    Ref19 = c.Ref19,
-                    Ref20 = c.Ref20,
-                    Ref21 = c.Ref21,
-                    Ref22 = c.Ref22,
-                    Ref23 = c.Ref23,
-                    Ref24 = c.Ref24,
-                    Ref25 = c.Ref25,
-                    Ref26 = c.Ref26,
-                    Ref27 = c.Ref27,
-                    Ref28 = c.Ref28,
-                    Ref29 = c.Ref29,
-                    Ref30 = c.Ref30,
-                    Status = c.Status
+
+                }).ToList();
+            return query;
+        }
+        public async Task<List<GetTemplatesClone>> GetCloneTemplates()
+        {
+            var query = _unitOfWork.TemplateDetailRepository.AsQueryable().
+                Select(c => new GetTemplatesClone
+                {
+                    DisplayName = c.DisplayName.Replace("\r\n", "").Trim(),
+                    DatabaseName = c.DatabaseName.Replace("\r\n", "").Trim()
 
                 }).ToList();
             return query;
@@ -117,224 +100,168 @@ namespace Management.Services.Masters
 
         public async Task<HashSet<string>> AddValidation(AddDumpUploadRequestModel request)
         {
-            bool isDumpUploadExists = await _unitOfWork.DumpUploadMasterRepository.Any(x => x.Ref1.ToLower().Trim() == request.Ref1.ToLower().Trim());
-            if (isDumpUploadExists)
-            {
-                validationMessage.Add("DumpUpload Already Exists");
-            }
+            bool isDumpUpload = await _unitOfWork.DumpUploadMasterRepository.Any(x => x.Id == request.Id);
+            if (isDumpUpload)
+                validationMessage.Add("0");
+            else validationMessage.Add("1");
+
             return validationMessage;
         }
         public async Task<HashSet<string>> FileValidation(IFormFile CSVData)
         {
-            var TemplateGetList = _unitOfWork.TemplateMasterRepository.AsQueryable().ToArray();
+            ListTemp = _unitOfWork.TemplateDetailRepository.AsQueryable().ToList();
+
             var validationMessage = new HashSet<string>();
 
-            DataTable GetLength = convertcsvtodatatable(CSVData);
-            string[] GetColumnName = GetLength.Columns.Cast<DataColumn>().Select(x => x.ColumnName).ToArray();
+            DataTable GetCsVData = convertcsvtodatatable(CSVData);
 
-
-            if (TemplateGetList.Length > 0)
+            if (GetCsVData != null && GetCsVData.Rows.Count > 0)
             {
-                foreach (var template in TemplateGetList)
+                string[] GetColumnName = GetCsVData.Columns.Cast<DataColumn>().Select(x => x.ColumnName).ToArray();
+
+                if (ListTemp.Count > 0)
                 {
-                    bool isMandatory = (bool)template.IsMandatory;
-                    var isValid = template.Validation.ToUpper() == "YES";
-
-                    if (isValid && isMandatory)
+                    foreach (var template in ListTemp)
                     {
-                        var templateColumnName = template.DisplayName;
+                        bool? isMandatory = template.IsMandatory;
 
-                        // Check if any column matches the template
-                        if (!GetColumnName.Contains(templateColumnName))
+                        var isValid = template.Validation?.ToUpper() == "YES";  
+
+                        if (isValid && isMandatory.GetValueOrDefault())
                         {
-                            validationMessage.Add($"{templateColumnName} Not-Valid");
-                            // If a mismatch is found, you might want to break out of the loop here
-                            break;
+                            var templateColumnName = template.DisplayName;
+ 
+                            if (!GetColumnName.Contains(templateColumnName))
+                            {
+                                validationMessage.Add($"{templateColumnName} Not-Valid"); 
+                                break;
+                            }
                         }
-                    }
+                    } 
+                    validationMessage.Add("Valid");
                 }
-                // If you need to check the validity for each template regardless of previous mismatches,
-                // move this line outside the loop.
-                validationMessage.Add("Valid");
             }
+            else
+            {
+                validationMessage.Add("Invalid CSV Data");
+            }
+
             return validationMessage;
         }
+
         public async Task<DumpUpload> Add(IFormFile formFile)
         {
-            DumpUpload response = null; // Declare response outside the loop
+            DumpUpload response = null;
 
             DataTable DT = convertcsvtodatatable(formFile);
-
-            #region Check Duplication.. 
-
-            //DataTable Datatablenonduplicate = table.Clone();
-
-            DataTable Datatableduplicate = DT.Clone();
-
-            var dupsFromCol = from dr in DT.AsEnumerable().Distinct()
-                              group dr by dr["Branch Code"] into groups
-                              where groups.Count() > 1
-                              select groups;
-            foreach (var duplicate in dupsFromCol)
-            {
-                for (int i = 0; i < duplicate.Count(); i++)
-                {
-                    DataRow dr = Datatableduplicate.NewRow();
-                    dr = duplicate.ElementAt(i);
-                    Datatableduplicate.ImportRow(dr);
-                    DT.Rows.Remove(dr);
-                }
-            }
-
-            var TotalDuplication = Datatableduplicate.AsEnumerable().Select(r => r.Field<string>("Branch Code")).Distinct().Count();
-                                          
-            var NonDuplication = DT.Rows.Count;
-            #endregion
-
-            var GetJso = Encryption.GlobalCommonResponse.DataTableToJsonObj(Datatableduplicate);
-
-
-            // Check if the DataTable is not null and has rows
             if (DT != null && DT.Rows.Count > 0)
             {
-                // Use LINQ to group by the Branch_Code column and count the groups
-                var duplicateGroups = DT.AsEnumerable().GroupBy(row => row.Field<string>("Branch Code")).Where(group => group.Count() > 1).Select(group => group.Key).ToList();
+                var jsonResult = new Dictionary<string, object>
+                {
+                    { "AddedRef1Values", new List<string>() },
+                    { "UpdatedRef1Values", new List<string>() },
+                    { "TotalUpload", new Dictionary<string, int>
+                        {
+                            { "TotalCount", 0 },
+                            { "AddedCount", 0 },
+                            { "UpdatedCount", 0 }
+                        }
+                    }
+                };
 
-                List<Object> rowColls = new List<Object>();
-
+                List<object> rowColls = new List<object>();
 
                 foreach (DataRow dr in DT.Rows)
                 {
                     Dictionary<string, string> rowColl = new Dictionary<string, string>();
                     int i = 1;
+
                     foreach (DataColumn dc in DT.Columns)
                     {
                         var GetRowValue = dr[dc].ToString();
 
                         rowColl.Add("Ref" + i, dr[dc].ToString());
-
                         i++;
                     }
-
                     rowColls.Add(rowColl);
                 }
+                int addedCount = 0;
+                int updatedCount = 0;
+
                 foreach (var item in rowColls)
                 {
+                    string isValid = "Add";
                     if (item is Dictionary<string, string> dictionary)
                     {
-                        var newDumpUpload = new DumpUpload();
+                        DumpUpload newDumpUpload = null;
 
                         foreach (var kvp in dictionary)
                         {
                             string key = kvp.Key;
                             string value = kvp.Value;
 
-
-
-
-                            switch (key)
+                            if (key == "Ref1")
                             {
-                                case "Ref1":
-                                    newDumpUpload.Ref1 = value;
-                                    break;
-                                case "Ref2":
-                                    newDumpUpload.Ref2 = value;
-                                    break;
-                                case "Ref3":
-                                    newDumpUpload.Ref3 = value;
-                                    break;
-                                case "Ref4":
-                                    newDumpUpload.Ref4 = value;
-                                    break;
-                                case "Ref5":
-                                    newDumpUpload.Ref5 = value;
-                                    break;
-                                case "Ref6":
-                                    newDumpUpload.Ref6 = value;
-                                    break;
-                                case "Ref7":
-                                    newDumpUpload.Ref7 = value;
-                                    break;
-                                case "Ref8":
-                                    newDumpUpload.Ref8 = value;
-                                    break;
-                                case "Ref9":
-                                    newDumpUpload.Ref9 = value;
-                                    break;
-                                case "Ref10":
-                                    newDumpUpload.Ref10 = value;
-                                    break;
-                                case "Ref11":
-                                    newDumpUpload.Ref11 = value;
-                                    break;
-                                case "Ref12":
-                                    newDumpUpload.Ref12 = value;
-                                    break;
-                                case "Ref13":
-                                    newDumpUpload.Ref13 = value;
-                                    break;
-                                case "Ref14":
-                                    newDumpUpload.Ref14 = value;
-                                    break;
-                                case "Ref15":
-                                    newDumpUpload.Ref15 = value;
-                                    break;
-                                case "Ref16":
-                                    newDumpUpload.Ref16 = value;
-                                    break;
-                                case "Ref17":
-                                    newDumpUpload.Ref17 = value;
-                                    break;
-                                case "Ref18":
-                                    newDumpUpload.Ref18 = value;
-                                    break;
-                                case "Ref19":
-                                    newDumpUpload.Ref19 = value;
-                                    break;
-                                case "Ref20":
-                                    newDumpUpload.Ref20 = value;
-                                    break;
-                                case "Ref21":
-                                    newDumpUpload.Ref21 = value;
-                                    break;
-                                case "Ref22":
-                                    newDumpUpload.Ref22 = value;
-                                    break;
-                                case "Ref23":
-                                    newDumpUpload.Ref23 = value;
-                                    break;
-                                case "Ref24":
-                                    newDumpUpload.Ref24 = value;
-                                    break;
-                                case "Ref25":
-                                    newDumpUpload.Ref25 = value;
-                                    break;
-                                case "Ref26":
-                                    newDumpUpload.Ref26 = value;
-                                    break;
-                                case "Ref27":
-                                    newDumpUpload.Ref27 = value;
-                                    break;
-                                case "Ref28":
-                                    newDumpUpload.Ref28 = value;
-                                    break;
-                                case "Ref29":
-                                    newDumpUpload.Ref29 = value;
-                                    break;
-                                case "Ref30":
-                                    newDumpUpload.Ref30 = value;
-                                    break;
+                                var isRef1Exist = await _unitOfWork.DumpUploadMasterRepository.FirstOrDefault(x => x.Ref1 == value);
+
+                                if (isRef1Exist != null)
+                                { 
+                                    isValid = "Update";
+                                    newDumpUpload = isRef1Exist;
+                                }
+                                else
+                                {
+                                    isValid = "Add";
+                                    newDumpUpload = new DumpUpload(); 
+                                }
+
+                                if (isValid == "Add")
+                                {
+                                    ((List<string>)jsonResult["AddedRef1Values"]).Add(value);
+                                }
+                                else if (isValid == "Update")
+                                {
+                                    ((List<string>)jsonResult["UpdatedRef1Values"]).Add(value);
+                                }
                             }
+
+                            typeof(DumpUpload).GetProperty(key)?.SetValue(newDumpUpload, value);
                         }
 
-
-                        newDumpUpload.UploadBy = 100;
+                        newDumpUpload.UploadBy = _gluID.GetUserID(); 
                         newDumpUpload.UploadDate = DateTime.Now;
-                        response = await _unitOfWork.DumpUploadMasterRepository.Add(newDumpUpload);
+                        newDumpUpload.ItemStatus = "IN";
+
+                        if (isValid == "Add")
+                        {
+                            response = await _unitOfWork.DumpUploadMasterRepository.Add(newDumpUpload);
+                            addedCount++;
+                        }
+                        else if (isValid == "Update")
+                        {
+                            response = await _unitOfWork.DumpUploadMasterRepository.Update(newDumpUpload);
+                            updatedCount++;
+                        }
+                        if(addedCount == 178)
+                        {
+                            string KK = "aDD";
+                        }
                         await _unitOfWork.Commit();
                     }
-                }
-                response.Status = "Total Upload : " + DT.Rows.Count + "  Total-Impoert-Duplication :  " + Datatableduplicate.Rows.Count + "jsonDuplication" + GetJso;
+                } 
+                ((Dictionary<string, int>)jsonResult["TotalUpload"])["TotalCount"] = DT.Rows.Count;
+                ((Dictionary<string, int>)jsonResult["TotalUpload"])["AddedCount"] = addedCount;
+                ((Dictionary<string, int>)jsonResult["TotalUpload"])["UpdatedCount"] = updatedCount;
+
+                // Convert the JSON result to a string
+                var jsonResponse = JsonConvert.SerializeObject(jsonResult);
+
+                response.Status = jsonResponse;
+            }
+            else
+            {
+                // Handle the case when DT is null or has no rows
+                response.Status = "No data to process.";
             }
             return response;
         }
@@ -434,7 +361,8 @@ namespace Management.Services.Masters
     }
     public interface IDumpUploadDomain
     {
-        Task<IEnumerable<GetAllDumpUploadResponse>> GetAll();
+        Task<List<GetAllDumpUploadResponse>> GetAll();
+        Task<List<GetTemplatesClone>> GetCloneTemplates();
         Task<GetAllDumpUploadResponse> GetDumpUploadById(GETDumpUploadByIdRequest request);
         Task<HashSet<string>> AddValidation(AddDumpUploadRequestModel request);
         Task<DumpUpload> Add(IFormFile CSVData);

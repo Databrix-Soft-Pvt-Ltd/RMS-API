@@ -28,8 +28,6 @@ namespace Management.API.Controllers.Masters
         [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
         [SwaggerOperation("Authentication API", "This API will use for authenticate user base email id")]
 
-        [HttpGet]
-        [Route("Auth")]
         public async Task<IActionResult> Post([FromBody] AuthenticationRequestModel authenticationRequestModel)
         {
             try
@@ -41,7 +39,7 @@ namespace Management.API.Controllers.Masters
                     var result = await _authenticationDomain.Login(authenticationRequestModel);
                     return Ok(result);
                 }
-                GlobalResponse.Response_Code = 404;
+                GlobalResponse.Response_Code = 204;
                 GlobalResponse.Response_Message = validationCount.FirstOrDefault();
                 return Ok(GlobalResponse);
             }

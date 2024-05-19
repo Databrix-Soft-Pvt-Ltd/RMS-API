@@ -11,8 +11,8 @@ namespace Management.Model.RMSEntity
         public string? Address { get; set; }
         public bool? IsActive { get; set; }
         public long? CreatedBy { get; set; }
+        public DateTime? CreatedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public long? UpdatedBy { get; set; }
-        public DateTime? CreatedDate { get; set; }
     }
 }

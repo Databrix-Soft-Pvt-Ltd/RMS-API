@@ -9,7 +9,7 @@ using static Management.Services.Masters.UserDomain;
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     [ApiController]
     public class ClientMasterController : ControllerBase
     {
@@ -31,17 +31,20 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                GlobalResponse.ReponseData = await _clientMasterDomain.GetAll();
+                //GlobalResponse.ReponseData = await _clientMasterDomain.GetAll();
+                var IResult = await _clientMasterDomain.GetAll();
 
-                if (GlobalResponse.ReponseData != null)
+
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
-                    GlobalResponse.Response_Message = "Record fetched Successfully....";
+                    GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -57,7 +60,42 @@ namespace Management.API.Controllers.Masters
             }
         }
 
+        [HttpGet]
+        [Route("GetAllIsActiveClient")]
+        public async Task<IActionResult> GetAllIsActiveClient()
+        {
+            try
+            {
+                //GlobalResponse.ReponseData = await _clientMasterDomain.GetAll();
+                var IResult = await _clientMasterDomain.GetAllIsActiveClient();
 
+
+                if (IResult.Count != 0)
+                {
+                    GlobalResponse.Response_Code = 200;
+                    GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.ReponseData = IResult;
+                    return Ok(GlobalResponse);
+                }
+                else
+                {
+                    GlobalResponse.Response_Code = 204;
+                    GlobalResponse.Response_Message = "Record not found";
+                    GlobalResponse.ReponseData = IResult;
+
+                    return Ok(GlobalResponse);
+                }
+            }
+            catch (Exception ex)
+            {
+                GlobalError.ErrorCode = 505;
+                GlobalError.Error_Message = ex.Message;
+                _exceptionHandling.LogError(ex);
+
+
+                return Ok(GlobalError);
+            }
+        }
 
         [HttpPost("GetClientById")]
         public async Task<IActionResult> GetClientById(GetClientByIdRequestModel clientId)
@@ -74,7 +112,7 @@ namespace Management.API.Controllers.Masters
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -136,7 +174,7 @@ namespace Management.API.Controllers.Masters
                     return Ok(GlobalResponse);
                 }
 
-                GlobalError.ErrorCode = 404;
+                GlobalError.ErrorCode = 204;
                 GlobalError.Error_Message = "Record does not exists";
                 return Ok(GlobalError);
             }
@@ -150,7 +188,7 @@ namespace Management.API.Controllers.Masters
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         [Route("DeleteClient")]
         public async Task<IActionResult> Delete(GetClientByIdRequestModel id)
         {

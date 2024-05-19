@@ -11,5 +11,6 @@ namespace Management.Model.ResponseModel
         public long Id { get; set; }
         public string? ClientName { get; set; }
         public string? ClientCode { get; set; }
+        public bool? IsActive { get; set; }
     }
 }

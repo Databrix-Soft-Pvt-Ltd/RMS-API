@@ -1,11 +1,13 @@
 ﻿using Management.API.Miscellaneous;
 using Management.Model.RequestModel;
 using Management.Services.Masters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class ProjectController : ControllerBase
     {
@@ -28,17 +30,20 @@ namespace Management.API.Controllers.Masters
             try
             {
 
-                GlobalResponse.ReponseData = await _projectMasterDomain.GetAll();
+                //GlobalResponse.ReponseData = await _projectMasterDomain.GetAll();
+                var IResult = await _projectMasterDomain.GetAll();
 
-                if (GlobalResponse.ReponseData != null)
+
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
                     GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -75,7 +80,7 @@ namespace Management.API.Controllers.Masters
                     }
                     else
                     {
-                        GlobalResponse.Response_Code = 404;
+                        GlobalResponse.Response_Code = 204;
                         GlobalResponse.Response_Message = "Record not found";
                         return Ok(GlobalResponse);
                     }
@@ -83,7 +88,7 @@ namespace Management.API.Controllers.Masters
                 //}
                 //else
                 //{
-                //    GlobalResponse.Response_Code = 404;
+                //    GlobalResponse.Response_Code = 204;
                 //    GlobalResponse.Response_Message = "Token is not Valid....";
                 //    return Ok(GlobalResponse);
                 //}
@@ -128,7 +133,7 @@ namespace Management.API.Controllers.Masters
             //    }
             //    else
             //    {
-            //        GlobalResponse.Response_Code = 404;
+            //        GlobalResponse.Response_Code = 204;
             //        GlobalResponse.Response_Message = "Token is not Valid....";
             //        return Ok(GlobalResponse);
             //    }
@@ -157,7 +162,7 @@ namespace Management.API.Controllers.Masters
                     GlobalResponse.Response_Message = "Record Updated successfully";
                     return Ok(GlobalResponse);
                 }
-                GlobalResponse.Response_Code = 404;
+                GlobalResponse.Response_Code = 204;
                 GlobalResponse.Response_Message = "Record not found";
                 return Ok(GlobalResponse);
 
@@ -172,7 +177,7 @@ namespace Management.API.Controllers.Masters
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         [Route("DeleteProject")]
         public async Task<IActionResult> Delete(GetProjectByIdRequestModel id)
         {
@@ -187,7 +192,7 @@ namespace Management.API.Controllers.Masters
 
                     return Ok(GlobalResponse);
                 }
-                GlobalError.ErrorCode = 404;
+                GlobalError.ErrorCode = 204;
                 GlobalError.Error_Message = "Record not found";
                 return Ok(GlobalError);
             }

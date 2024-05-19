@@ -1,15 +1,32 @@
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Release\net6.0\Management.Core.deps.json
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Release\net6.0\Management.Core.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Release\net6.0\Management.Core.pdb
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Release\net6.0\Management.Model.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Release\net6.0\Management.Model.pdb
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\Management.Core.csproj.AssemblyReference.cache
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\Management.Core.AssemblyInfoInputs.cache
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\Management.Core.AssemblyInfo.cs
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\Management.Core.csproj.CopyComplete
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\Management.Core.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\refint\Management.Core.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\Management.Core.pdb
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Release\net6.0\ref\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.Core\bin\Release\net6.0\Management.Core.deps.json
+D:\NEW RMS\RMS-API\Management.Core\bin\Release\net6.0\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.Core\bin\Release\net6.0\Management.Core.pdb
+D:\NEW RMS\RMS-API\Management.Core\bin\Release\net6.0\Management.Model.dll
+D:\NEW RMS\RMS-API\Management.Core\bin\Release\net6.0\Management.Model.pdb
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.AssemblyInfo.cs
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.sourcelink.json
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.csproj.CopyComplete
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\refint\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\Management.Core.pdb
+D:\NEW RMS\RMS-API\Management.Core\obj\Release\net6.0\ref\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Release\net6.0\Management.Core.deps.json
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Release\net6.0\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Release\net6.0\Management.Core.pdb
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Release\net6.0\Management.Model.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Release\net6.0\Management.Model.pdb
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.AssemblyInfo.cs
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.sourcelink.json
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.csproj.CopyComplete
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\refint\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\Management.Core.pdb
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Release\net6.0\ref\Management.Core.dll

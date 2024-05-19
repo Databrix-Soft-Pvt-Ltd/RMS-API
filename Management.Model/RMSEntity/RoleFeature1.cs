@@ -7,7 +7,7 @@ namespace Management.Model.RMSEntity
     {
         public long Id { get; set; }
         public long? RoleId { get; set; }
-        public long? MenuId { get; set; }
+        public long? SubMenuId { get; set; }
         public bool? ViewRights { get; set; }
         public bool? AddRights { get; set; }
         public bool? ModifyRights { get; set; }

@@ -2,6 +2,7 @@
 using Management.Model.RequestModel;
 using Management.Model.ResponseModel;
 using Management.Services.Masters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
@@ -9,6 +10,7 @@ using System.Text;
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class BranchMappingController : ControllerBase
     {
@@ -16,10 +18,12 @@ namespace Management.API.Controllers.Masters
         private GlobalError GlobalError = new GlobalError();
         readonly IBranchMappingDomain _branchMappingDomain;
         private IExceptionHandling _exceptionHandling;
-        public BranchMappingController(IBranchMappingDomain branchMappingDomain, IExceptionHandling exceptionHandling)
+        private readonly IValidateTokenExtension _validateTokenExtension;
+        public BranchMappingController(IBranchMappingDomain branchMappingDomain, IExceptionHandling exceptionHandling, IValidateTokenExtension validateTokenExtension)
         {
             _branchMappingDomain = branchMappingDomain;
             _exceptionHandling = exceptionHandling;
+            _validateTokenExtension = validateTokenExtension;
         }
         [HttpGet]
         [Route("GetAllBranchMap")]
@@ -27,18 +31,23 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                GlobalResponse.ReponseData = await _branchMappingDomain.GetAllBranchMap();
 
-                if (GlobalResponse.ReponseData != "0")
+                //GlobalResponse.ReponseData = await _branchMappingDomain.GetAllBranchMap();
+                var IResult = await _branchMappingDomain.GetAllBranchMap();
+
+
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
-                    GlobalResponse.Response_Message = "Record fetched Successfully....";
+                    GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
             }
@@ -67,7 +76,7 @@ namespace Management.API.Controllers.Masters
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -86,43 +95,49 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                var validations1 = await _branchMappingDomain.AddBranchMapValidation(request, "BranchMap");
+                await _branchMappingDomain.Add(request);
 
-                if (validations1.FirstOrDefault() == "0")
-                {
-                    var validations2 = await _branchMappingDomain.AddBranchMapValidation(request, "Branch");
+                GlobalResponse.Response_Message = "Record Added successfully";
+                GlobalResponse.Response_Code = 200;
+                return Ok(GlobalResponse);
 
-                    if (validations2.FirstOrDefault() == "0")
-                    {
-                        var validations3 = await _branchMappingDomain.AddBranchMapValidation(request, "User");
+                //var validations1 = await _branchMappingDomain.AddBranchMapValidation(request, "BranchMap");
 
-                        if (validations3.FirstOrDefault() == "0")
-                        {
-                            await _branchMappingDomain.Add(request);
-                            GlobalResponse.Response_Message = "Record Added successfully";
-                            GlobalResponse.Response_Code = 200;
-                            return Ok(GlobalResponse);
-                        }
-                        else
-                        {
-                            GlobalResponse.Response_Code = 404;
-                            GlobalResponse.Response_Message = "User not found";
-                            return Ok(GlobalResponse);
-                        }
-                    }
-                    else
-                    {
-                        GlobalResponse.Response_Code = 404;
-                        GlobalResponse.Response_Message = "Branch not found";
-                        return Ok(GlobalResponse);
-                    }
-                }
-                else
-                {
-                    GlobalResponse.Response_Code = 404;
-                    GlobalResponse.Response_Message = "BranchMap alredy found";
-                    return Ok(GlobalResponse);
-                }
+                //if (validations1.FirstOrDefault() != "0")
+                //{
+                //    var validations2 = await _branchMappingDomain.AddBranchMapValidation(request, "Branch");
+
+                //    if (validations2.FirstOrDefault() != "0")
+                //    {
+                //        var validations3 = await _branchMappingDomain.AddBranchMapValidation(request, "User");
+
+                //        if (validations3.FirstOrDefault() != "0")
+                //        {
+
+                //            GlobalResponse.Response_Message = "Record Added successfully";
+                //            GlobalResponse.Response_Code = 200;
+                //            return Ok(GlobalResponse);
+                //        }
+                //        else
+                //        {
+                //            GlobalResponse.Response_Code = 204;
+                //            GlobalResponse.Response_Message = "User not found";
+                //            return Ok(GlobalResponse);
+                //        }
+                //    }
+                //    else
+                //    {
+                //        GlobalResponse.Response_Code = 204;
+                //        GlobalResponse.Response_Message = "Branch not found";
+                //        return Ok(GlobalResponse);
+                //    }
+                //}
+                //else
+                //{
+                //    GlobalResponse.Response_Code = 204;
+                //    GlobalResponse.Response_Message = "BranchMap alredy found";
+                //    return Ok(GlobalResponse);
+                //}
 
             }
             catch (Exception ex)
@@ -140,42 +155,47 @@ namespace Management.API.Controllers.Masters
         {
             try
             {
-                var validations1 = await _branchMappingDomain.UpdateBranchMapValidation(request, "BranchMap");
 
-                if (validations1.FirstOrDefault() == "0")
-                {
-                    var validations2 = await _branchMappingDomain.UpdateBranchMapValidation(request, "Branch");
+                await _branchMappingDomain.Update(request);
+                GlobalResponse.Response_Message = "Record Updated successfully";
+                return Ok(GlobalResponse);
 
-                    if (validations2.FirstOrDefault() == "0")
-                    {
-                        var validations3 = await _branchMappingDomain.UpdateBranchMapValidation(request, "User");
+                // var validations1 = await _branchMappingDomain.UpdateBranchMapValidation(request, "BranchMap");
 
-                        if (validations3.FirstOrDefault() == "0")
-                        {
-                            await _branchMappingDomain.Update(request);
-                            GlobalResponse.Response_Message = "Record Updated successfully";
-                            return Ok(GlobalResponse);
-                        }
-                        else
-                        {
-                            GlobalResponse.Response_Code = 404;
-                            GlobalResponse.Response_Message = "User not found";
-                            return Ok(GlobalResponse);
-                        }
-                    }
-                    else
-                    {
-                        GlobalResponse.Response_Code = 404;
-                        GlobalResponse.Response_Message = "Branch not found";
-                        return Ok(GlobalResponse);
-                    }
-                }
-                else if (validations1.Count == 1)
-                {
-                    GlobalResponse.Response_Code = 404;
-                    GlobalResponse.Response_Message = "BranchMap Already Exists";
-                    return Ok(GlobalResponse);
-                }
+                //if (validations1.FirstOrDefault() == "0")
+                //{
+                //    var validations2 = await _branchMappingDomain.UpdateBranchMapValidation(request, "Branch");
+
+                //    if (validations2.FirstOrDefault() == "0")
+                //    {
+                //        var validations3 = await _branchMappingDomain.UpdateBranchMapValidation(request, "User");
+
+                //        if (validations3.FirstOrDefault() == "0")
+                //        {
+                //            await _branchMappingDomain.Update(request);
+                //            GlobalResponse.Response_Message = "Record Updated successfully";
+                //            return Ok(GlobalResponse);
+                //        }
+                //        else
+                //        {
+                //            GlobalResponse.Response_Code = 204;
+                //            GlobalResponse.Response_Message = "User not found";
+                //            return Ok(GlobalResponse);
+                //        }
+                //    }
+                //    else
+                //    {
+                //        GlobalResponse.Response_Code = 204;
+                //        GlobalResponse.Response_Message = "Branch not found";
+                //        return Ok(GlobalResponse);
+                //    }
+                //}
+                //else if (validations1.Count == 1)
+                //{
+                //    GlobalResponse.Response_Code = 204;
+                //    GlobalResponse.Response_Message = "BranchMap Already Exists";
+                //    return Ok(GlobalResponse);
+                //}
             }
             catch (Exception ex)
             {
@@ -186,15 +206,13 @@ namespace Management.API.Controllers.Masters
             }
             return Ok(GlobalResponse);
         }
-        [HttpDelete]
+
+        [HttpPost]
         [Route("DeleteBranchMap")]
         public async Task<IActionResult> Delete(GetBranchMapByIdRequestModel id)
         {
             try
             {
-                
-
-
                 var validations = await _branchMappingDomain.DeleteValidation(id);
                 if (validations.FirstOrDefault() == "1")
                 {
@@ -208,6 +226,25 @@ namespace Management.API.Controllers.Masters
                     GlobalError.Error_Message = "Record doesnot  Exists";
                     return Ok(GlobalError);
                 }
+            }
+            catch (Exception ex)
+            {
+                GlobalError.ErrorCode = 505;
+                GlobalError.Error_Trace_Point = ex.StackTrace;
+                GlobalError.Error_Message = ex.Message;
+                return Ok(GlobalError);
+            }
+        }
+
+        [HttpPost]
+        [Route("BranchMapIsActive")]
+        public async Task<IActionResult> BranchMapIsActive(BranchMap_IsAction branchMapList)
+        {
+            try
+            {
+                await _branchMappingDomain.UpdateBranchMapIsActive(branchMapList);
+                GlobalResponse.Response_Message = "Record IsActivated successfully";
+                return Ok(GlobalResponse);
             }
             catch (Exception ex)
             {

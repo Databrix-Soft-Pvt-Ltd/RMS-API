@@ -10,6 +10,7 @@ using Management.Model.ResponseModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
+using TwoWayCommunication.Model.Enums;
 
 namespace Management.Services.Masters
 {
@@ -18,13 +19,16 @@ namespace Management.Services.Masters
         readonly IUnitOfWork _unitOfWork;
         private HashSet<string> validationMessage { get; set; }
 
-        public ClientMasterDomain(IUnitOfWork unitOfWork)
+        private readonly GlobalUserID _gluID;
+
+        public ClientMasterDomain(IUnitOfWork unitOfWork, GlobalUserID globalUserID)
         {
             _unitOfWork = unitOfWork;
             validationMessage = new HashSet<string>();
+            _gluID = globalUserID;
 
         }
-        public async Task<IEnumerable<GetAllClientResponseModel>> GetAll()
+        public async Task<List<GetAllClientResponseModel>> GetAll()
         {
             var query = _unitOfWork.ClientMasterRepository.AsQueryable().
                 Select(client => new GetAllClientResponseModel
@@ -32,10 +36,23 @@ namespace Management.Services.Masters
                     Id = client.Id,
                     ClientName = client.ClientName,
                     ClientCode = client.ClientCode,
-
+                    IsActive = client.IsActive
                 }).ToList();
             return query;
         }
+        public async Task<List<GetAllClientResponseModel>> GetAllIsActiveClient()
+        {
+            var query = _unitOfWork.ClientMasterRepository.AsQueryable().Where(x=>x.IsActive == true).
+                Select(client => new GetAllClientResponseModel
+                {
+                    Id = client.Id,
+                    ClientName = client.ClientName,
+                    ClientCode = client.ClientCode,
+                    IsActive = client.IsActive
+                }).ToList();
+            return query;
+        }
+
 
         public async Task<GetAllClientResponseModel> GetClientById(GetClientByIdRequestModel request)
         {
@@ -46,6 +63,7 @@ namespace Management.Services.Masters
                     Id = client.Id,
                     ClientName = client.ClientName,
                     ClientCode = client.ClientCode,
+                    IsActive = client.IsActive
 
                 })
                 .FirstOrDefault();
@@ -78,6 +96,8 @@ namespace Management.Services.Masters
 
             newClient.ClientName = request.ClientName;
             newClient.ClientCode = request.ClientCode;
+            newClient.IsActive = request.IsActive;
+            newClient.CreatedBy = _gluID.GetUserID();
             newClient.CreatedDate = DateTime.Now;
             var response = await _unitOfWork.ClientMasterRepository.Add(newClient);
             await _unitOfWork.Commit();
@@ -93,6 +113,8 @@ namespace Management.Services.Masters
             }
             existingClient.ClientCode = request.ClientCode;
             existingClient.ClientName = request.ClientName;
+            existingClient.IsActive = request.IsActive;
+            existingClient.UpdatedBy = _gluID.GetUserID();
             existingClient.UpdatedDate = DateTime.Now;
             var response = await _unitOfWork.ClientMasterRepository.Update(existingClient);
             await _unitOfWork.Commit();
@@ -123,7 +145,8 @@ namespace Management.Services.Masters
     }
     public interface IClientMasterDomain
     {
-        Task<IEnumerable<GetAllClientResponseModel>> GetAll();
+        Task<List<GetAllClientResponseModel>> GetAllIsActiveClient();
+        Task<List<GetAllClientResponseModel>> GetAll();
         Task<GetAllClientResponseModel> GetClientById(GetClientByIdRequestModel request);
         Task<HashSet<string>> AddValidation(AddClientRequest request);
         Task<HashSet<string>> UpdateValidation(UpdateClientRequestModel request);

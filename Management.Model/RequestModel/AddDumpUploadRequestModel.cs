@@ -8,7 +8,7 @@ namespace Management.Model.RequestModel
 {
     public class AddDumpUploadRequestModel
     {
-
+        public int Id { get; set; }
         public string Ref1 { get; set; }
         public string Ref2 { get; set; }
         public string Ref3 { get; set; }

@@ -9,15 +9,11 @@ namespace Management.Model.RequestModel
     public class UpdateTemplateRequest
     {
         public long Id { get; set; }
-        public string? DisplayName { get; set; }
-        public string? DatabaseName { get; set; }
-        public string? DataType { get; set; }
-        public int? MaxLength { get; set; }
-        public bool? IsMandatory { get; set; }
-        public bool? IsUnique { get; set; }
-        public string? MasterValue { get; set; }
-        public string? ControlType { get; set; }
-        public string? DateFormat { get; set; }
-        public string? Validation { get; set; }
+        public String TemplateName { get; set; }
+        public String TemplateDescription { get; set; }
+        public bool IsActive { get; set; }
+        public int CreatedBy { get; set; }
+        public int ModifieldBy { get; set; }
+        public GetAllTemplateResponse[] TemplateDetails { get; set; }
     }
 }

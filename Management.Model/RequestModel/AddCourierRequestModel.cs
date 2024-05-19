@@ -9,5 +9,7 @@ namespace Management.Model.RequestModel
     public class AddCourierRequestModel
     {
         public string? CourierName { get; set; }
+
+        public bool? IsActive { get; set; }
     }
 }

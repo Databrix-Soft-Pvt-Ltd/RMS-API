@@ -10,6 +10,7 @@ using Management.Model.ResponseModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
+using TwoWayCommunication.Model.Enums;
 
 namespace Management.Services.Masters
 {
@@ -18,26 +19,38 @@ namespace Management.Services.Masters
         readonly IUnitOfWork _unitOfWork;
         private HashSet<string> validationMessage { get; set; }
 
-        public RoleDomain(IUnitOfWork unitOfWork)
+        private readonly GlobalUserID _gluID;
+
+        public RoleDomain(IUnitOfWork unitOfWork, GlobalUserID globalUserID)
         {
             _unitOfWork = unitOfWork;
             validationMessage = new HashSet<string>();
+            _gluID = globalUserID;
 
         }
-        public async Task<IEnumerable<GetAllRoleResponse>> GetAll()
+        public async Task<List<GetAllRoleResponse>> GetAll()
         {
             var query = _unitOfWork.RoleRepository.AsQueryable().
                 Select(r => new GetAllRoleResponse
                 {
                     RoleIdPk = r.Id,
                     Description = r.Description,
-                    RoleName = r.RoleName
+                    RoleName = r.RoleName,
+                    IsActive=r.IsActive
 
 
                 }).ToList();
             return query;
         }
-
+        public async Task<HashSet<string>> GetCheckPageAccess(int RoleID, int MenuId)
+        {
+            bool IsAccess = await _unitOfWork.RoleMappingepository.Any(x => x.RoleId == RoleID && x.SubMenuId == MenuId);
+            if(IsAccess)
+                validationMessage.Add("0");
+             else
+                validationMessage.Add("1");
+            return validationMessage;
+        }
         public async Task<GetAllRoleResponse> GetRoleById(GetRoleByIdRequestModel request)
         {
             var user = _unitOfWork.RoleRepository.AsQueryable()
@@ -46,7 +59,8 @@ namespace Management.Services.Masters
                 {
                     RoleIdPk = r.Id,
                     Description = r.Description,
-                    RoleName = r.RoleName
+                    RoleName = r.RoleName,
+                    IsActive=r.IsActive
 
                 })
                 .FirstOrDefault();
@@ -62,20 +76,23 @@ namespace Management.Services.Masters
         }
         public async Task<HashSet<string>> UpdateValidation(UpdateRoleRequestModel request)
         {
-            bool isClientExists = await _unitOfWork.RoleRepository.Any(x => x.Id != request.Id);
+            bool isClientExists = await _unitOfWork.RoleRepository.Any(x => x.Id == request.Id && x.Id != 0);
+
 
             if (isClientExists)
             {
-                bool CheckRoleName = await _unitOfWork.RoleRepository.Any(x => x.Id != request.Id && x.RoleName == request.RoleName);
-                if (CheckRoleName)
+                bool CheckRoleName = await _unitOfWork.RoleRepository.Any(x => x.Id == request.Id);
+                if (!CheckRoleName)
                 {
-                    validationMessage.Add("Role Already exists");
+                    validationMessage.Add("1");
                 }
                 else
                     validationMessage.Add("0");
             }
             else
-                validationMessage.Add("0");
+            {
+                validationMessage.Add("2");
+            }
             return validationMessage;
 
         }
@@ -85,6 +102,8 @@ namespace Management.Services.Masters
 
             newRole.RoleName = request.RoleName;
             newRole.Description = request.Description;
+            newRole.IsActive = request.IsActive;
+            newRole.CreatedBy = _gluID.GetUserID();
             newRole.CreatedDate = DateTime.Now;
             var response = await _unitOfWork.RoleRepository.Add(newRole);
             await _unitOfWork.Commit();
@@ -100,6 +119,8 @@ namespace Management.Services.Masters
             }
             existingRole.RoleName = request.RoleName;
             existingRole.Description = request.Description;
+            existingRole.IsActive = request.IsActive;
+            existingRole.ModifyBy = _gluID.GetUserID();
             existingRole.UpdatedAt = DateTime.Now;
             var response = await _unitOfWork.RoleRepository.Update(existingRole);
             await _unitOfWork.Commit();
@@ -130,7 +151,7 @@ namespace Management.Services.Masters
     }
     public interface IRoleDomain
     {
-        Task<IEnumerable<GetAllRoleResponse>> GetAll();
+        Task<List<GetAllRoleResponse>> GetAll();
         Task<GetAllRoleResponse> GetRoleById(GetRoleByIdRequestModel request);
         Task<HashSet<string>> AddValidation(AddRoleRequestModel request);
         Task<HashSet<string>> UpdateValidation(UpdateRoleRequestModel request);
@@ -138,5 +159,6 @@ namespace Management.Services.Masters
         Task<RoleMaster> Update(UpdateRoleRequestModel request);
         Task<HashSet<string>> DeleteValidation(GetRoleByIdRequestModel id);
         Task Delete(GetRoleByIdRequestModel id);
+        Task<HashSet<string>> GetCheckPageAccess(int RoleID, int MenuId);
     }
 }

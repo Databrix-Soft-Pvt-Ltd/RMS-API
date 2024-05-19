@@ -5,16 +5,13 @@ namespace Management.Model.RMSEntity
 {
     public partial class TemplateMaster
     {
-        public long Id { get; set; }
-        public string? DisplayName { get; set; }
-        public string? DatabaseName { get; set; }
-        public string? DataType { get; set; }
-        public int? MaxLength { get; set; }
-        public bool? IsMandatory { get; set; }
-        public bool? IsUnique { get; set; }
-        public string? MasterValue { get; set; }
-        public string? ControlType { get; set; }
-        public string? DateFormat { get; set; }
-        public string? Validation { get; set; }
+        public int TempId { get; set; }
+        public string? TempName { get; set; }
+        public string? TempDescription { get; set; }
+        public bool? IsActive { get; set; }
+        public DateTime? IsCreatedDate { get; set; }
+        public int? IsCreatedBy { get; set; }
+        public DateTime? IsModifiedDate { get; set; }
+        public int? IsModifiledBy { get; set; }
     }
 }

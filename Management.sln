@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.API", "Management.API\Management.API.csproj", "{A4F82B2E-70CA-428C-A471-34669020A653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.API", "Management.API\Management.API.csproj", "{A4F82B2E-70CA-428C-A471-34669020A653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Core", "Management.Core\Management.Core.csproj", "{125F18B8-6954-40F8-9243-6EB5F2D50BCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Core", "Management.Core\Management.Core.csproj", "{125F18B8-6954-40F8-9243-6EB5F2D50BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Model", "Management.Model\Management.Model.csproj", "{0309A364-9650-4BD4-8898-3AE92FA8401C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Model", "Management.Model\Management.Model.csproj", "{0309A364-9650-4BD4-8898-3AE92FA8401C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Services", "Management.Services\Management.Services.csproj", "{CF237D48-E343-46BA-B834-A2EC49482786}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Services", "Management.Services\Management.Services.csproj", "{CF237D48-E343-46BA-B834-A2EC49482786}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

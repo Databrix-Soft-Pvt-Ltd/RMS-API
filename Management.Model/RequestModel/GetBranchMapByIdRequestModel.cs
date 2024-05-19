@@ -8,6 +8,7 @@ namespace Management.Model.RequestModel
 {
     public class GetBranchMapByIdRequestModel
     {
-        public long? BranchMapId { get; set; }
+        public long? UserID { get; set; }
+        public long? BranchID { get; set; }
     }
 }

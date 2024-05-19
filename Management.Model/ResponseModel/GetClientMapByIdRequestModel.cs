@@ -8,7 +8,8 @@ namespace Management.Model.ResponseModel
 {
     public class GetClientMapByIdRequestModel
     {
-        public long? ClientMapId { get; set; }
+        public long? UserID { get; set; }
+        public long? ClientId { get; set; }
     }
        
 }

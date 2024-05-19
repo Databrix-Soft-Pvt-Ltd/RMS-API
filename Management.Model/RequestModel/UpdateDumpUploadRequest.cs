@@ -8,7 +8,7 @@ namespace Management.Model.RequestModel
 {
     public class UpdateDumpUploadRequest
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string Ref1 { get; set; }
         public string Ref2 { get; set; }
         public string Ref3 { get; set; }

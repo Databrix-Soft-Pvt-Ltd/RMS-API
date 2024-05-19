@@ -3,46 +3,85 @@ using Management.Model.RequestModel;
 using Management.Model.RMSEntity;
 using Management.Services.Masters;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc; 
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+using TwoWayCommunication.Model.Enums;
 
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     [ApiController]
     public class BranchController : ControllerBase
     {
-
+        
         private GlobalResponse GlobalResponse = new GlobalResponse();
         private GlobalError GlobalError = new GlobalError();
         readonly IBranchMasterDomain _branchMasterDomain;
         private IExceptionHandling _exceptionHandling;
-        private readonly IValidateTokenExtension _validateTokenExtension;
-        public BranchController(IBranchMasterDomain branchMasterDomain, IExceptionHandling exceptionHandling, IValidateTokenExtension validateTokenExtension)
+        public BranchController(IBranchMasterDomain branchMasterDomain, IExceptionHandling exceptionHandling)
         {
             _branchMasterDomain = branchMasterDomain;
             _exceptionHandling = exceptionHandling;
-            _validateTokenExtension = validateTokenExtension;
+           
         }
         [HttpGet]
         [Route("GetAllBranch")]
         public async Task<IActionResult> Get()
         {
             try
+            { 
+                var IResult = await _branchMasterDomain.GetAll();
+                    //GlobalResponse.ReponseData = await _branchMasterDomain.GetAll();
+
+
+                    if (IResult.Count != 0)
+                    {
+                        GlobalResponse.Response_Code = 200;
+                        GlobalResponse.Response_Message = "Record fetched Successfully";
+                        GlobalResponse.ReponseData = IResult;
+                        return Ok(GlobalResponse);
+                    }
+                    else
+                    {
+                        GlobalResponse.Response_Code = 204;
+                        GlobalResponse.Response_Message = "Record not found";
+                        return Ok(GlobalResponse);
+                    } 
+            }
+            catch (Exception ex)
             {
-                GlobalResponse.ReponseData = await _branchMasterDomain.GetAll();
+                GlobalError.ErrorCode = 12313;
+                GlobalError.Error_Message = ex.Message;
+                _exceptionHandling.LogError(ex);
 
 
-                if (GlobalResponse.ReponseData != null)
+                return Ok(GlobalError);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAllIsActiveBranch")]
+        public async Task<IActionResult> GetAllIsActiveBranch()
+        {
+            try
+            {
+                var IResult = await _branchMasterDomain.GetAllIsActiveBranch();
+                //GlobalResponse.ReponseData = await _branchMasterDomain.GetAll();
+
+
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
                     GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
             }
@@ -56,8 +95,6 @@ namespace Management.API.Controllers.Masters
                 return Ok(GlobalError);
             }
         }
-
-
 
         [HttpPost("GetBranchById")]
         public async Task<IActionResult> GetBranchById(GetBranchByIdRequestModel id)
@@ -76,7 +113,7 @@ namespace Management.API.Controllers.Masters
                     }
                     else
                     {
-                        GlobalResponse.Response_Code = 404;
+                        GlobalResponse.Response_Code = 204;
                         GlobalResponse.Response_Message = "Record not found";
                         return Ok(GlobalResponse);
                     }
@@ -119,7 +156,7 @@ namespace Management.API.Controllers.Masters
                 //}
                 //else
                 //{
-                //    GlobalResponse.Response_Code = 404;
+                //    GlobalResponse.Response_Code = 204;
                 //    GlobalResponse.Response_Message = "Token is not Valid....";
                 //    return Ok(GlobalResponse);
                 //}
@@ -159,10 +196,8 @@ namespace Management.API.Controllers.Masters
                 return Ok(GlobalError);
             }
         }
-
-
-        [HttpDelete]
-        [Route("DeleteClient")]
+        [HttpPost]
+        [Route("DeleteBranch")]
         public async Task<IActionResult> Delete(GetBranchByIdRequestModel id)
         {
             try
@@ -176,7 +211,7 @@ namespace Management.API.Controllers.Masters
 
                     return Ok(GlobalResponse);
                 }
-                GlobalError.ErrorCode = 404;
+                GlobalError.ErrorCode = 204;
                 GlobalError.Error_Message = "Record not found for deletion";
                 return Ok(GlobalError);
             }
@@ -188,5 +223,7 @@ namespace Management.API.Controllers.Masters
                 return Ok(GlobalError);
             }
         }
+        
     }
+    
 }

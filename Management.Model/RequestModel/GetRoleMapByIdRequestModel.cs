@@ -8,6 +8,7 @@ namespace Management.Model.RequestModel
 {
     public class GetRoleMapByIdRequestModel
     {
-        public long RoleMapID { get; set; } 
+        public long RoleId { get; set; }
+         public long MenuID { get; set; } 
     }
 }

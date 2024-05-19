@@ -14,6 +14,5 @@ namespace Management.Model.RMSEntity
         public long? ModifyBy { get; set; }
         public long? ModifyDate { get; set; }
         public DateTime? UpdatedAt { get; set; }
-
     }
 }

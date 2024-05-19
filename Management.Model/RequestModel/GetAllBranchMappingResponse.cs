@@ -8,7 +8,12 @@ namespace Management.Model.RequestModel
 {
     public class GetAllBranchMappingResponse
     {
+        public long? Id { get; set; }
+
+        public long? userId { get; set; }
+        
         public long? BranchId { get; set; }
-        public long? UserId { get; set; }
+        public string? BranchName { get; set; }
+        public string? UserName { get; set; }
     }
 }

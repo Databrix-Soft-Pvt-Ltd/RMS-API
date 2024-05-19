@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using TwoWayCommunication.Core.UnitOfWork;
+using TwoWayCommunication.Model.Enums;
 
 namespace Management.Services.Masters
 {
@@ -16,13 +17,15 @@ namespace Management.Services.Masters
     {
         readonly IUnitOfWork _unitOfWork;
         private HashSet<string> validationMessage { get; set; }
-        public BranchMasterDomain(IUnitOfWork unitOfWork)
+        private readonly GlobalUserID _gluID;
+        public BranchMasterDomain(IUnitOfWork unitOfWork,GlobalUserID globalUserID)
         {
             _unitOfWork = unitOfWork;
             validationMessage = new HashSet<string>();
+            _gluID = globalUserID;
         }
 
-        public async Task<IEnumerable<GetAllBranchResponseModel>> GetAll()
+        public async Task<List<GetAllBranchResponseModel>> GetAll()
         {
             var query = _unitOfWork.BranchMasterRepository
                           .AsQueryable()
@@ -31,7 +34,26 @@ namespace Management.Services.Masters
                                  Id = c.Id,
                                  BranchCode = c.BranchCode,
                                  BranchName = c.BranchName,
-                                 Address = c.Address
+                                 Address = c.Address,
+                                 IsActive=c.IsActive
+
+
+                             }).ToList();
+
+            return query;
+        }
+
+        public async Task<List<GetAllBranchResponseModel>> GetAllIsActiveBranch()
+        {
+            var query = _unitOfWork.BranchMasterRepository
+                          .AsQueryable().Where(x => x.IsActive == true)
+                             .Select(c => new GetAllBranchResponseModel
+                             {
+                                 Id = c.Id,
+                                 BranchCode = c.BranchCode,
+                                 BranchName = c.BranchName,
+                                 Address = c.Address,
+                                 IsActive = c.IsActive
 
 
                              }).ToList();
@@ -48,7 +70,8 @@ namespace Management.Services.Masters
                     Id = c.Id,
                     BranchCode = c.BranchCode,
                     BranchName = c.BranchName,
-                    Address = c.Address
+                    Address = c.Address,
+                    IsActive = c.IsActive
 
                 })
                 .FirstOrDefault();
@@ -83,7 +106,9 @@ namespace Management.Services.Masters
             branch.BranchName = request.BranchName;
             branch.BranchCode = request.BranchCode;
             branch.Address = request.Address;
+            branch.IsActive = request.IsActive;
             branch.CreatedDate = DateTime.Now;
+            branch.CreatedBy = _gluID.GetUserID();
             var response = await _unitOfWork.BranchMasterRepository.Add(branch);
             await _unitOfWork.Commit();
             return response;
@@ -101,7 +126,10 @@ namespace Management.Services.Masters
             branchMaster.BranchName = request.BranchName;
             branchMaster.BranchCode = request.BranchCode;
             branchMaster.Address = request.Address;
+            branchMaster.IsActive = request.IsActive;
             branchMaster.UpdatedDate = DateTime.Now;
+            branchMaster.UpdatedBy = _gluID.GetUserID();
+
             var response = await _unitOfWork.BranchMasterRepository.Update(branchMaster);
             await _unitOfWork.Commit();
 
@@ -131,7 +159,8 @@ namespace Management.Services.Masters
     }
     public interface IBranchMasterDomain
     {
-        Task<IEnumerable<GetAllBranchResponseModel>> GetAll();
+        Task<List<GetAllBranchResponseModel>> GetAll();
+        Task<List<GetAllBranchResponseModel>> GetAllIsActiveBranch();
         Task<GetAllBranchResponseModel> GetBranchById(GetBranchByIdRequestModel request);
         Task<HashSet<string>> AddValidation(AddBranchRequestModel request);
         Task<HashSet<string>> UpdateValidation(UpdateBranchRequestModel request);

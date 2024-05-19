@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using TwoWayCommunication.Core.UnitOfWork;
+using TwoWayCommunication.Model.Enums;
 
 namespace Management.Services.Masters
 {
@@ -16,13 +17,15 @@ namespace Management.Services.Masters
     {
         readonly IUnitOfWork _unitOfWork;
         private HashSet<string> validationMessage { get; set; }
-        public CourierMasterDomain(IUnitOfWork unitOfWork)
+        private readonly GlobalUserID _gluID;
+        public CourierMasterDomain(IUnitOfWork unitOfWork, GlobalUserID globalUserID)
         {
             _unitOfWork = unitOfWork;
             validationMessage = new HashSet<string>();
+            _gluID = globalUserID;
         }
 
-        public async Task<IEnumerable<GetAllCourierResposneModel>> GetAll()
+        public async Task<List<GetAllCourierResposneModel>> GetAll()
         {
             var query = _unitOfWork.CourierMasterRepository
                           .AsQueryable()
@@ -30,6 +33,23 @@ namespace Management.Services.Masters
                              {
                                  Id = c.Id,
                                  CourierName = c.CourierName,
+                                 IsActive=c.IsActive
+
+
+                             }).ToList();
+
+            return query;
+        }
+
+        public async Task<List<GetAllCourierResposneModel>> GetAllIsActiveCourier()
+        {
+            var query = _unitOfWork.CourierMasterRepository
+                          .AsQueryable().Where(x => x.IsActive == true)
+                             .Select(c => new GetAllCourierResposneModel
+                             {
+                                 Id = c.Id,
+                                 CourierName = c.CourierName,
+                                 IsActive = c.IsActive
 
 
                              }).ToList();
@@ -45,7 +65,7 @@ namespace Management.Services.Masters
                 {
                     Id = c.Id,
                     CourierName = c.CourierName,
-
+                    IsActive=c.IsActive
                 })
                 .FirstOrDefault();
 
@@ -69,6 +89,8 @@ namespace Management.Services.Masters
             var courier = new CourierMaster();
 
             courier.CourierName = request.CourierName;
+            courier.IsActive = request.IsActive;
+            courier.CreatedBy = _gluID.GetUserID();
             courier.CreatedDate = DateTime.Now;
             var response = await _unitOfWork.CourierMasterRepository.Add(courier);
             await _unitOfWork.Commit();
@@ -77,16 +99,26 @@ namespace Management.Services.Masters
 
         public async Task<HashSet<string>> UpdateValidation(UpdateCourierRequestModel request)
         {
-            bool isClientExists = await _unitOfWork.CourierMasterRepository.Any(x => x.Id != request.Id);
+            bool isCourierExists = await _unitOfWork.CourierMasterRepository.Any(x => x.Id == request.Id);
+            if (isCourierExists)
+                validationMessage.Add("0");
+            else
+                validationMessage.Add("1");  
             return validationMessage;
         }
 
         public async Task<CourierMaster> Update(UpdateCourierRequestModel request)
         {
-            var existingClient = new CourierMaster();
+            var existingClient = await _unitOfWork.CourierMasterRepository.GetById(request.Id);
+            if (existingClient == null)
+            {
+                throw new Exception("courier not found");
+            }
 
             existingClient.Id = request.Id;
             existingClient.CourierName = request.CourierName;
+            existingClient.IsActive = request.IsActive;
+            existingClient.UpdatedBy = _gluID.GetUserID();
             existingClient.UpdatedAt = DateTime.Now;
             var response = await _unitOfWork.CourierMasterRepository.Update(existingClient);
             await _unitOfWork.Commit();
@@ -119,7 +151,8 @@ namespace Management.Services.Masters
     }
     public interface ICourierMasterDomain
     {
-        Task<IEnumerable<GetAllCourierResposneModel>> GetAll();
+        Task<List<GetAllCourierResposneModel>> GetAllIsActiveCourier();
+        Task<List<GetAllCourierResposneModel>> GetAll();
         Task<GetAllCourierResposneModel> GetUserById(GetCourierByIdRequestModel request);
         Task<HashSet<string>> AddValidation(AddCourierRequestModel request);
         Task<HashSet<string>> UpdateValidation(UpdateCourierRequestModel request);

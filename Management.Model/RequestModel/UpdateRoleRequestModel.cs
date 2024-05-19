@@ -12,5 +12,6 @@ namespace Management.Model.RequestModel
         public long Id { get; set; } 
         public string RoleName { get; set; } = null!;
         public string Description { get; set; } = null!;
+        public bool? IsActive { get; set; }
     }
 }

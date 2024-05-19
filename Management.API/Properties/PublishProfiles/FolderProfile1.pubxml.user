@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\freelancer\23_02_2024\Management.API\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2024-02-29T08:53:05.6448541Z||;True|2024-02-29T14:22:15.5295836+05:30||;True|2024-02-28T20:18:32.4655440+05:30||;True|2024-02-28T20:17:25.2045434+05:30||;True|2024-02-27T19:40:33.0099670+05:30||;True|2024-02-27T19:40:08.9233666+05:30||;True|2024-02-27T19:37:59.6826839+05:30||;True|2024-02-27T19:24:34.4902422+05:30||;True|2024-02-27T19:11:04.0670792+05:30||;True|2024-02-27T19:09:53.2067813+05:30||;True|2024-02-25T17:40:21.1155306+05:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

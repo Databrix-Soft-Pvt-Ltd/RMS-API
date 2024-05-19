@@ -1,5 +1,7 @@
 ﻿using System.Data;
 using System.Text;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace Management.API.Miscellaneous
 {
@@ -14,8 +16,6 @@ namespace Management.API.Miscellaneous
         public long ErrorCode { get; set; }
         public string Error_Message { get; set; }
         public string Error_Trace_Point { get; set; }
-    }
+    } 
     
-
-
 }

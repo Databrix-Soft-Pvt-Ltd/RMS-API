@@ -2,6 +2,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Security.Claims;
 using TwoWayCommunication.Core.UnitOfWork;
 using TwoWayCommunication.Model.ResponseModel;
 
@@ -30,7 +31,7 @@ namespace Management.API.Miscellaneous
         }
         public TokenValidation ValidateToken(string token)
         {
-            TokenValidation validation = new TokenValidation();
+            TokenValidation validation = new TokenValidation(); 
 
             var tokenHandler = new JwtSecurityTokenHandler();
 
@@ -66,11 +67,13 @@ namespace Management.API.Miscellaneous
                     }, out SecurityToken validatedToken);
 
                     jwtToken = (JwtSecurityToken)validatedToken;
-                    validation.UserID = jwtToken.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Azp)?.Value;
-                    validation.RoleID = jwtToken.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Sid)?.Value;
-                    validation.EmailID = jwtToken.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Email)?.Value;
+
+                    validation.UserID = jwtToken.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Iss)?.Value;
+                    //validation.RoleID = jwtToken.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Sid)?.Value;
+                    //validation.EmailID = jwtToken.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Email)?.Value;
 
                     validation.ValiedTokenRespose = "Valid token";
+                    validation.IsValid = true;
 
                 }
 
@@ -90,11 +93,15 @@ namespace Management.API.Miscellaneous
                 return validation;
             }
             return validation;
-        }
+        } 
 
     }
+
+    
     public interface IValidateTokenExtension
     {
         TokenValidation ValidateToken(string token);
     }
+
+  
 }

@@ -1,11 +1,13 @@
 ﻿using Management.API.Miscellaneous;
 using Management.Model.RequestModel;
 using Management.Services.Masters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class MenuController : ControllerBase
     {
@@ -21,23 +23,25 @@ namespace Management.API.Controllers.Masters
             _validateTokenExtension = validateTokenExtension;
         }
         [HttpGet]
-        [Route("GetAllMenu")]
+        [Route("GetAllMenu")] 
         public async Task<IActionResult> Get()
         {
             try
             {
+                var IResult = await _menuMasterDomain.GetAll();
 
-                GlobalResponse.ReponseData = await _menuMasterDomain.GetAll();
+                // GlobalResponse.ReponseData = await _menuMasterDomain.GetAll();
 
-                if (GlobalResponse.ReponseData != null)
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
                     GlobalResponse.Response_Message = "Record fetched Successfully";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -50,9 +54,6 @@ namespace Management.API.Controllers.Masters
                 return Ok(GlobalError);
             }
         }
-
-
-
         [HttpPost("GetMenuById")]
         public async Task<IActionResult> GetMenuById(GetMenuByIdRequestModel id)
         {
@@ -73,7 +74,7 @@ namespace Management.API.Controllers.Masters
                         }
                         else
                         {
-                            GlobalResponse.Response_Code = 404;
+                            GlobalResponse.Response_Code = 204;
                             GlobalResponse.Response_Message = "Record not found";
                             return Ok(GlobalResponse);
                         }
@@ -81,7 +82,7 @@ namespace Management.API.Controllers.Masters
                 //}
                 //else
                 //{
-                //    GlobalResponse.Response_Code = 404;
+                //    GlobalResponse.Response_Code = 204;
                 //    GlobalResponse.Response_Message = "Token is not Valid....";
                 //    return Ok(GlobalResponse);
                 //}
@@ -107,9 +108,9 @@ namespace Management.API.Controllers.Masters
             {
                 //  if (GetResponse.ValiedTokenRespose.Trim() == "Valid token")
                 //{
-                var validations = await _menuMasterDomain.AddValidation(request);
+               // var validations = await _menuMasterDomain.AddValidation(request);
 
-                if (validations.Count == 0)
+                if (true)
                 {
                     await _menuMasterDomain.Add(request);
                     GlobalResponse.Response_Message = "Record Added successfully";
@@ -125,7 +126,7 @@ namespace Management.API.Controllers.Masters
                 //}
                 //else
                 //{
-                //    GlobalResponse.Response_Code = 404;
+                //    GlobalResponse.Response_Code = 204;
                 //    GlobalResponse.Response_Message = "Token is not Valid....";
                 //    return Ok(GlobalResponse);
                 //}
@@ -155,7 +156,7 @@ namespace Management.API.Controllers.Masters
                     GlobalResponse.Response_Message = "Record Updated successfully";
                     return Ok(GlobalResponse);
                 }
-                GlobalResponse.Response_Code = 404;
+                GlobalResponse.Response_Code = 204;
                 GlobalResponse.Response_Message = "Record Already Exists";
                 return Ok(GlobalResponse);
 
@@ -170,7 +171,7 @@ namespace Management.API.Controllers.Masters
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         [Route("DeleteMenu")]
         public async Task<IActionResult> Delete(GetMenuByIdRequestModel id)
         {
@@ -185,7 +186,7 @@ namespace Management.API.Controllers.Masters
 
                     return Ok(GlobalResponse);
                 }
-                GlobalResponse.Response_Code = 404;
+                GlobalResponse.Response_Code = 204;
                 GlobalResponse.Response_Message = "Record not found for deletion";
                 return Ok(GlobalResponse);
             }
@@ -196,19 +197,7 @@ namespace Management.API.Controllers.Masters
                 GlobalError.Error_Message = ex.Message;
                 return Ok(GlobalError);
             }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
+        } 
 
     }
 }

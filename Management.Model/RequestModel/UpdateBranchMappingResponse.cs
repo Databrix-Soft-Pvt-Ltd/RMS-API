@@ -8,9 +8,9 @@ namespace Management.Model.RequestModel
 {
     public class UpdateBranchMappingResponse
     {
-        public long Id { get; set; }
-        public long? BranchId { get; set; }
         public long? UserId { get; set; }
+        public int[] BranchId { get; set; }
+   
         
     }
 }

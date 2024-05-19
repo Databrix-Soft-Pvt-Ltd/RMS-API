@@ -9,5 +9,6 @@ namespace Management.Model.RequestModel
     public class GEtTemplateByIdRequest
     {
         public long Id { get; set; }
+        public long TempDetailsID { get; set; }
     }
 }

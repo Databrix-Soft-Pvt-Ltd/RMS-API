@@ -21,7 +21,7 @@ namespace Management.Services.Masters
         }
 
 
-        public async Task<IEnumerable<GetAllProjectREsponseModel>> GetAll()
+        public async Task<List<GetAllProjectREsponseModel>> GetAll()
         {
             var query = _unitOfWork.ProjectMasterRepository
                           .AsQueryable()
@@ -30,15 +30,13 @@ namespace Management.Services.Masters
                                  Id = c.Id,
                                  ProjectName = c.ProjectName,
                                  LoginPageLogo = c.LoginPageLogo,
-                                 HeaderPageLogo = c.LoginPageLogo
+                                 HeaderPageLogo = c.HeaderPageLogo,
+                                 IsActive =c.IsActive
 
                              }).ToList();
 
             return query;
         }
-
-
-
         public async Task<GetAllProjectREsponseModel> GetProjectById(GetProjectByIdRequestModel request)
         {
             var user = _unitOfWork.ProjectMasterRepository.AsQueryable()
@@ -48,7 +46,8 @@ namespace Management.Services.Masters
                     Id = c.Id,
                     ProjectName = c.ProjectName,
                     LoginPageLogo = c.LoginPageLogo,
-                    HeaderPageLogo = c.LoginPageLogo
+                    HeaderPageLogo = c.HeaderPageLogo,
+                    IsActive=c.IsActive
 
                 })
                 .FirstOrDefault();
@@ -72,6 +71,7 @@ namespace Management.Services.Masters
             project.ProjectName = request.ProjectName;
             project.LoginPageLogo = request.LoginPageLogo;
             project.HeaderPageLogo = request.HeaderPageLogo;
+            project.IsActive = request.IsActive;
             var response = await _unitOfWork.ProjectMasterRepository.Add(project);
             await _unitOfWork.Commit();
             return response;
@@ -98,6 +98,7 @@ namespace Management.Services.Masters
             projectMaster.ProjectName = request.ProjectName;
             projectMaster.LoginPageLogo = request.LoginPageLogo;
             projectMaster.HeaderPageLogo = request.HeaderPageLogo;
+            projectMaster.IsActive = request.IsActive;
             //  projectMaster.UpdatedAt = DateTime.Now;
             var response = await _unitOfWork.ProjectMasterRepository.Update(projectMaster);
             await _unitOfWork.Commit();
@@ -129,7 +130,7 @@ namespace Management.Services.Masters
     }
     public interface IProjectMasterDomain
     {
-        Task<IEnumerable<GetAllProjectREsponseModel>> GetAll();
+        Task<List<GetAllProjectREsponseModel>> GetAll();
         Task<GetAllProjectREsponseModel> GetProjectById(GetProjectByIdRequestModel request);
         Task<HashSet<string>> AddValidation(AddProjectReuestModel request);
         Task<ProjectMaster> Add(AddProjectReuestModel request);

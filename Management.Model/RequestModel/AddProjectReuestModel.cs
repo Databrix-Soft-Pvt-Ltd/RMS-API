@@ -12,5 +12,7 @@ namespace Management.Model.RequestModel
         public string? ProjectName { get; set; }
         public string? LoginPageLogo { get; set; }
         public string? HeaderPageLogo { get; set; }
+
+        public bool? IsActive { get; set; }
     }
 }

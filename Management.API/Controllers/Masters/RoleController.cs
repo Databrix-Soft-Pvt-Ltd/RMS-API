@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Management.API.Controllers.Masters
 {
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     [ApiController]
     public class RoleController : ControllerBase
     {
@@ -23,23 +23,45 @@ namespace Management.API.Controllers.Masters
             _roleDomain = roleDomain;
             _exceptionHandling = exceptionHandling;
         }
+        [HttpPost]
+        [Route("GetPageAccess")]
+        public async Task<IActionResult> GetRoleAccess(int RoleID,int MenuId)
+        {
+            var GetAccess = await _roleDomain.GetCheckPageAccess(RoleID, MenuId);
+             
+            if (GetAccess.FirstOrDefault() == "0")
+            { 
+                GlobalResponse.Response_Message = "You have Authorizie this Page"; 
+                return Ok(GlobalResponse);
+            }
+            else
+            {
+                GlobalError.ErrorCode = 505;
+                GlobalError.Error_Message = "You have not Authorizie this Page.";
+                return Ok(GlobalError);
+            } 
+            return Ok(GlobalError);
+        } 
         [HttpGet]
         [Route("GetAllRole")]
         public async Task<IActionResult> Get()
         {
             try
             {
-                GlobalResponse.ReponseData = await _roleDomain.GetAll();
+                //GlobalResponse.ReponseData = await _roleDomain.GetAll();
 
-                if (GlobalResponse.ReponseData != "0")
+                var IResult = await _roleDomain.GetAll();
+
+                if (IResult.Count != 0)
                 {
                     GlobalResponse.Response_Code = 200;
                     GlobalResponse.Response_Message = "Record fetched Successfully....";
+                    GlobalResponse.ReponseData = IResult;
                     return Ok(GlobalResponse);
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -54,9 +76,6 @@ namespace Management.API.Controllers.Masters
                 return Ok(GlobalError);
             }
         }
-
-
-
         [HttpPost("GetRoleById")]
         public async Task<IActionResult> GetRoleById(GetRoleByIdRequestModel roleId)
         {
@@ -72,7 +91,7 @@ namespace Management.API.Controllers.Masters
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Record not found";
                     return Ok(GlobalResponse);
                 }
@@ -103,7 +122,7 @@ namespace Management.API.Controllers.Masters
                 }
                 else
                 {
-                    GlobalResponse.Response_Code = 404;
+                    GlobalResponse.Response_Code = 204;
                     GlobalResponse.Response_Message = "Role Already Exists";
                     return Ok(GlobalResponse);
                 }
@@ -128,17 +147,23 @@ namespace Management.API.Controllers.Masters
                 {
 
                     await _roleDomain.Update(request);
-
-                    GlobalResponse.Response_Message = "Record Updated successfully";
-                    return Ok(GlobalResponse);
+                    GlobalResponse.Response_Message = "Record Updated successfully"; 
 
                 }
-                else
+                else if (validations.FirstOrDefault() == "1")
                 {
-                    GlobalResponse.Response_Code = 404;
-                    GlobalResponse.Response_Message = validations.FirstOrDefault();
-                    return Ok(GlobalResponse);
+                    GlobalResponse.Response_Code = 204;
+                    GlobalResponse.Response_Message = "Role already exists..";
+               
                 }
+                else if (validations.FirstOrDefault() == "2")
+                {
+                    GlobalResponse.Response_Code = 204;
+                    GlobalResponse.Response_Message = "Role not found for update."; 
+
+
+                }
+                return Ok(GlobalResponse);
             }
             catch (Exception ex)
             {
@@ -148,9 +173,7 @@ namespace Management.API.Controllers.Masters
                 return Ok(GlobalError);
             }
         }
-
-
-        [HttpDelete]
+        [HttpPost]
         [Route("DeleteRole")]
         public async Task<IActionResult> Delete(GetRoleByIdRequestModel id)
         {

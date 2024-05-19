@@ -10,6 +10,7 @@ namespace Management.Model.RequestModel
     {
         public string? ClientName { get; set; }
         public string? ClientCode { get; set; }
+        public bool? IsActive { get; set; }
 
     }
 }

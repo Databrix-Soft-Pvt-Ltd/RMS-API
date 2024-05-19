@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TwoWayCommunication.Core.UnitOfWork;
+using TwoWayCommunication.Model.Enums;
 
 namespace Management.Services.Masters
 {
@@ -15,26 +16,36 @@ namespace Management.Services.Masters
 
         readonly IUnitOfWork _unitOfWork;
         private HashSet<string> validationMessage { get; set; }
-        public MenuMasterDomain(IUnitOfWork unitOfWork)
+        private readonly GlobalUserID _gluID;
+        public MenuMasterDomain(IUnitOfWork unitOfWork, GlobalUserID globalUserID)
         {
             _unitOfWork = unitOfWork;
             validationMessage = new HashSet<string>();
+            _gluID = globalUserID;
         }
 
-        public async Task<IEnumerable<GetAllMenuResponseModel>> GetAll()
+        public async Task<List<GetAllMenuResponseModel>> GetAll()
         {
-            var query = _unitOfWork.MenuMasterRepository
-                          .AsQueryable()
-                             .Select(c => new GetAllMenuResponseModel
-                             {
-                                 Id = c.Id,
-                                 MainMenu = c.MainMenu,
-                                 SubMenu = c.SubMenu
 
+            List<GetAllMenuResponseModel> resultList = new List<GetAllMenuResponseModel>();
 
-                             }).ToList();
+            using (var rMS_2024Context = new RMS_2024Context())
+            {
+                resultList =  (from ms in rMS_2024Context.MenuMasters
+                                    join sms in rMS_2024Context.SubMenuMasters on ms.Id equals  (int)sms.MainMenuId into joined
+                                    from subMenu in joined.DefaultIfEmpty()
+                                    select new GetAllMenuResponseModel
+                                    {
+                                        Id = ms.Id,
+                                        SubMID = subMenu != null ? subMenu.SubMid : 0,
+                                        MainMenu = ms.MainMenu,
+                                        SubMenu = subMenu != null ? subMenu.SubMenu : null,
+                                        isParent = ms.IsParentActive,
+                                        isChild = subMenu != null ? subMenu.IsChildActive : false
+                                    }).ToList();
+            } 
+            return resultList;
 
-            return query;
         }
 
         public async Task<GetAllMenuResponseModel> GetMenuById(GetMenuByIdRequestModel request)
@@ -45,7 +56,7 @@ namespace Management.Services.Masters
                 {
                     Id = c.Id,
                     MainMenu = c.MainMenu,
-                    SubMenu = c.SubMenu
+                    isParent = c.IsParentActive
 
                 })
                 .FirstOrDefault();
@@ -55,34 +66,69 @@ namespace Management.Services.Masters
 
         public async Task<HashSet<string>> AddValidation(AddMenuRequestModel request)
         {
-            bool isBranchExists = await _unitOfWork.MenuMasterRepository.Any(x => x.MainMenu.ToLower().Trim() == request.MainMenu.ToLower().Trim()  && x.SubMenu.ToLower().Trim() == request.SubMenu.ToLower().Trim());
+            bool isBranchExists = await _unitOfWork.MenuMasterRepository.Any(x => x.MainMenu.ToLower().Trim() == request.MainMenu.ToLower().Trim());
             if (isBranchExists)
             {
                 validationMessage.Add("Main Menu Already Exists");
             }
             return validationMessage;
         }
-        public async Task<MenuMaster> Add(AddMenuRequestModel request)
+        public async Task<HashSet<string>> Add(AddMenuRequestModel request)
         {
-            var menu = new MenuMaster();
-            menu.MainMenu = request.MainMenu;
-            menu.SubMenu = request.SubMenu;
-            menu.IsParent = request.IsParent;
-            menu.IsChild = request.IsChild;
-            menu.IsVisible = request.IsVisible;
-            // menu.CreatedBy = 213123;
-            menu.CreatedDate = DateTime.Now;
-            var response = await _unitOfWork.MenuMasterRepository.Add(menu);
-            await _unitOfWork.Commit();
-            return response;
+            var validationMessage = new HashSet<string>();
+
+            object IsResult;
+
+            IsResult = _unitOfWork.SubMenuMasterRepository.AsQueryable().FirstOrDefault(x => x.SubMenu == request.SubMenu);
+
+            if (IsResult != null)
+            {
+                validationMessage.Add("Menu already exists");
+            }
+            else
+            {
+                object IsParents;
+
+                IsParents = _unitOfWork.MenuMasterRepository.AsQueryable().FirstOrDefault(x => x.MainMenu == request.MainMenu);
+
+                if (IsParents == null)
+                {
+
+                    var newMenu = new MenuMaster
+                    {
+                        MainMenu = request.MainMenu,
+                        CreatedBy = _gluID.GetUserID(),
+                        IsParentActive = request.IsParent,
+                        CreatedDate = DateTime.Now
+                    };
+                    await _unitOfWork.MenuMasterRepository.Add(newMenu);
+                    await _unitOfWork.Commit();
+
+                    IsParents = _unitOfWork.MenuMasterRepository.AsQueryable().FirstOrDefault(x => x.MainMenu == request.MainMenu);
+
+                }
+                var newDetails = new SubMenuMaster
+                {
+                    SubMenu = request.SubMenu,
+                    MainMenuId = (int)((MenuMaster)IsParents).Id,
+                    IsChildActive = request.IsChild,
+                    CreatedBy = (int)_gluID.GetUserID(),
+                    CreatedDate = DateTime.Now
+                };
+                await _unitOfWork.SubMenuMasterRepository.Add(newDetails);
+                await _unitOfWork.Commit();
+
+            }
+            return validationMessage;
+
         }
         public async Task<HashSet<string>> UpdateValidation(UpdateMenuRequestBody request)
         {
-            bool isClientExists = await _unitOfWork.MenuMasterRepository.Any(x => x.Id != request.Id && x.MainMenu.ToLower().Trim() == request.MainMenu.ToLower().Trim() && x.SubMenu.ToLower().Trim() == request.SubMenu.ToLower().Trim());
-            if (!isClientExists) 
+            bool isClientExists = await _unitOfWork.MenuMasterRepository.Any(x => x.Id != request.Id && x.MainMenu.ToLower().Trim() == request.MainMenu.ToLower().Trim());
+            if (!isClientExists)
                 validationMessage.Add("0");
             else
-            validationMessage.Add("1");
+                validationMessage.Add("1");
 
             return validationMessage;
         }
@@ -95,7 +141,12 @@ namespace Management.Services.Masters
                 throw new Exception("Client not found");
             }
             menuMaster.MainMenu = request.MainMenu;
-            menuMaster.SubMenu = request.SubMenu;
+            menuMaster.IsParentActive = request.IsParent;
+            menuMaster.CreatedDate = DateTime.Now;
+            menuMaster.CreatedBy = (int)_gluID.GetUserID();
+
+
+            //nEED TO CHECK
             //branchMaster.Address = request.Address;
             //  branchMaster.UpdatedAt = DateTime.Now;
             var response = await _unitOfWork.MenuMasterRepository.Update(menuMaster);
@@ -124,10 +175,10 @@ namespace Management.Services.Masters
     }
     public interface IMenuMasterDomain
     {
-        Task<IEnumerable<GetAllMenuResponseModel>> GetAll();
+        Task<List<GetAllMenuResponseModel>> GetAll();
         Task<GetAllMenuResponseModel> GetMenuById(GetMenuByIdRequestModel request);
         Task<HashSet<string>> AddValidation(AddMenuRequestModel request);
-        Task<MenuMaster> Add(AddMenuRequestModel request);
+        Task<HashSet<string>> Add(AddMenuRequestModel request);
         Task<HashSet<string>> UpdateValidation(UpdateMenuRequestBody request);
         Task<MenuMaster> Update(UpdateMenuRequestBody request);
         Task<HashSet<string>> DeleteValidation(GetMenuByIdRequestModel request);

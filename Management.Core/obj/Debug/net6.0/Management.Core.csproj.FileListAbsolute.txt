@@ -1,120 +1,122 @@
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
-D:\Sample\.NetCore6\Management\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
-D:\Sample\.NetCore6\Management\Management.Core\bin\Debug\net6.0\Management.Core.dll
-D:\Sample\.NetCore6\Management\Management.Core\bin\Debug\net6.0\Management.Core.pdb
-D:\Sample\.NetCore6\Management\Management.Core\bin\Debug\net6.0\Management.Model.dll
-D:\Sample\.NetCore6\Management\Management.Core\bin\Debug\net6.0\Management.Model.pdb
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\Management.Core.dll
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\Management.Core.pdb
-D:\Sample\.NetCore6\Management\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
-D:\APPLICATION\API\RM\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
-D:\APPLICATION\API\RM\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.dll
-D:\APPLICATION\API\RM\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.pdb
-D:\APPLICATION\API\RM\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.dll
-D:\APPLICATION\API\RM\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.pdb
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.dll
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.pdb
-D:\APPLICATION\API\RM\Management\Management\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
-D:\DailyWork_Culture\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
-D:\DailyWork_Culture\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.dll
-D:\DailyWork_Culture\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.pdb
-D:\DailyWork_Culture\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.dll
-D:\DailyWork_Culture\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.pdb
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.dll
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.pdb
-D:\DailyWork_Culture\Management\Management\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
-D:\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
-D:\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.dll
-D:\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.pdb
-D:\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.dll
-D:\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.pdb
-D:\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
-D:\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
-D:\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
-D:\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-D:\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
-D:\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.dll
-D:\Management\Management\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
-D:\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.pdb
-D:\Management\Management\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
-D:\RMS26\Management\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
-D:\RMS26\Management\Management.Core\bin\Debug\net6.0\Management.Core.dll
-D:\RMS26\Management\Management.Core\bin\Debug\net6.0\Management.Core.pdb
-D:\RMS26\Management\Management.Core\bin\Debug\net6.0\Management.Model.dll
-D:\RMS26\Management\Management.Core\bin\Debug\net6.0\Management.Model.pdb
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\Management.Core.dll
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\Management.Core.pdb
-D:\RMS26\Management\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.dll
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.pdb
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.dll
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.pdb
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.dll
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.pdb
-E:\Rajesh\Sweta_Dev\27-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
-D:\RMS Management\28_01_2024\Management\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
-D:\RMS Management\28_01_2024\Management\Management.Core\bin\Debug\net6.0\Management.Core.dll
-D:\RMS Management\28_01_2024\Management\Management.Core\bin\Debug\net6.0\Management.Core.pdb
-D:\RMS Management\28_01_2024\Management\Management.Core\bin\Debug\net6.0\Management.Model.dll
-D:\RMS Management\28_01_2024\Management\Management.Core\bin\Debug\net6.0\Management.Model.pdb
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\Management.Core.dll
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\Management.Core.pdb
-D:\RMS Management\28_01_2024\Management\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Core.pdb
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\bin\Debug\net6.0\Management.Model.pdb
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\Management.Core.pdb
-E:\Rajesh\Sweta_Dev\29-01-2024\Management\Management\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
+D:\Workspace\RMS\Management.Model\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
+D:\Workspace\RMS\Management.Model\Management.Core\bin\Debug\net6.0\Management.Core.dll
+D:\Workspace\RMS\Management.Model\Management.Core\bin\Debug\net6.0\Management.Core.pdb
+D:\Workspace\RMS\Management.Model\Management.Core\bin\Debug\net6.0\Management.Model.dll
+D:\Workspace\RMS\Management.Model\Management.Core\bin\Debug\net6.0\Management.Model.pdb
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\Management.Core.dll
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\Management.Core.pdb
+D:\Workspace\RMS\Management.Model\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
+D:\DailyWork_Culture\Final_Project\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
+D:\DailyWork_Culture\Final_Project\Management.Core\bin\Debug\net6.0\Management.Core.dll
+D:\DailyWork_Culture\Final_Project\Management.Core\bin\Debug\net6.0\Management.Core.pdb
+D:\DailyWork_Culture\Final_Project\Management.Core\bin\Debug\net6.0\Management.Model.dll
+D:\DailyWork_Culture\Final_Project\Management.Core\bin\Debug\net6.0\Management.Model.pdb
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.dll
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.pdb
+D:\DailyWork_Culture\Final_Project\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\bin\Debug\net6.0\Management.Core.dll
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\bin\Debug\net6.0\Management.Core.pdb
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\bin\Debug\net6.0\Management.Model.dll
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\bin\Debug\net6.0\Management.Model.pdb
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.dll
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\Management.Core.pdb
+D:\internship\RMS\Final_Project7\Final_Project\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
+D:\NEW RMS\RMS-API\Management.Core\bin\Debug\net6.0\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.Core\bin\Debug\net6.0\Management.Core.pdb
+D:\NEW RMS\RMS-API\Management.Core\bin\Debug\net6.0\Management.Model.dll
+D:\NEW RMS\RMS-API\Management.Core\bin\Debug\net6.0\Management.Model.pdb
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.sourcelink.json
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\Management.Core.pdb
+D:\NEW RMS\RMS-API\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\bin\Debug\net6.0\Management.Core.dll
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\bin\Debug\net6.0\Management.Core.pdb
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\bin\Debug\net6.0\Management.Model.dll
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\bin\Debug\net6.0\Management.Model.pdb
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.dll
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.pdb
+D:\Improtant_Profiles\Deployment_SITE\Management.API\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Debug\net6.0\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Debug\net6.0\Management.Core.pdb
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Debug\net6.0\Management.Model.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\bin\Debug\net6.0\Management.Model.pdb
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.sourcelink.json
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\Management.Core.pdb
+D:\NEW RMS\RMS-API\Management.API1\Management.API\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
+D:\Workspace\RMS\API2\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
+D:\Workspace\RMS\API2\Management.Core\bin\Debug\net6.0\Management.Core.dll
+D:\Workspace\RMS\API2\Management.Core\bin\Debug\net6.0\Management.Core.pdb
+D:\Workspace\RMS\API2\Management.Core\bin\Debug\net6.0\Management.Model.dll
+D:\Workspace\RMS\API2\Management.Core\bin\Debug\net6.0\Management.Model.pdb
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\Management.Core.dll
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\Management.Core.pdb
+D:\Workspace\RMS\API2\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll
+D:\NEW RMS\API2\API2\Management.Core\bin\Debug\net6.0\Management.Core.deps.json
+D:\NEW RMS\API2\API2\Management.Core\bin\Debug\net6.0\Management.Core.dll
+D:\NEW RMS\API2\API2\Management.Core\bin\Debug\net6.0\Management.Core.pdb
+D:\NEW RMS\API2\API2\Management.Core\bin\Debug\net6.0\Management.Model.dll
+D:\NEW RMS\API2\API2\Management.Core\bin\Debug\net6.0\Management.Model.pdb
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\Management.Core.csproj.AssemblyReference.cache
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\Management.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfoInputs.cache
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\Management.Core.AssemblyInfo.cs
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CoreCompileInputs.cache
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\Management.Core.csproj.CopyComplete
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\Management.Core.dll
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\refint\Management.Core.dll
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\Management.Core.pdb
+D:\NEW RMS\API2\API2\Management.Core\obj\Debug\net6.0\ref\Management.Core.dll

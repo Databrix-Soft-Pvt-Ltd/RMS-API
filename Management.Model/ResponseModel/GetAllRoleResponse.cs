@@ -12,5 +12,7 @@ namespace Management.Model.ResponseModel
         public long RoleIdPk { get; set; }
         public string RoleName { get; set; } = null!;
         public string Description { get; set; } = null!;
+
+        public bool? IsActive { get; set; }
     }
 }
